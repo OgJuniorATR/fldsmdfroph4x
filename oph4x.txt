@@ -1,0 +1,4813 @@
+{$CLEO .cs}
+{$USE CLEO+}
+{$USE clipboard}
+{$USE SAMPFUNCS}
+
+{0} nop 
+{2} 0661: breakpoint {_p1} "DeLoPuro y Verdadero"
+{19} 0661: breakpoint {_p1} "There is nothing here to copypaste :D"
+{60} 0661: breakpoint {_p1} "By Jr"
+
+:Noname_94
+{94} wait 0
+{98}   samp_is_available 
+{100} goto_if_false @Noname_94
+{107} set_cleo_shared_var 23 {value} 6969
+{114} set_cleo_shared_var 18 {value} 1337
+{121} set_cleo_shared_var 21 {value} 1
+{127} 4@ = sf_dxut_create_dialog "----------------------------------------------------------------------"
+{204} set_cleo_shared_var 19 {value} 4@
+{211} sf_dxut_dialog_set_visibility 4@ {isVisible} False
+{218} sf_dxut_dialog_set_title_visibility 4@ {isVisible} True
+{225} sf_dxut_dialog_set_minimized 4@ {isMinimized} False
+{232} sf_dxut_dialog_set_background_color 4@ {color} -939524096
+{242} sf_dxut_dialog_add_checkbox 4@ {id} 0 {text} "" {relCoordX} 288 {relCoordY} 4 {width} 20 {height} 20
+{260} sf_dxut_dialog_add_checkbox 4@ {id} 1 {text} "" {relCoordX} 308 {relCoordY} 4 {width} 20 {height} 20
+{278} sf_dxut_dialog_add_static_text 4@ {id} 2 {text} "-----------------------------------------------------------------------------" {relCoordX} 5 {relCoordY} 20 {width} 325 {height} 20
+{373} sf_dxut_dialog_add_static_text 4@ {id} 3 {text} "{FF0000}OP-HaX by Opcode.eXe" {relCoordX} 5 {relCoordY} 5 {width} 325 {height} 20
+{419} 31@ = 40
+{426} 31@ += 20
+{433} sf_dxut_dialog_add_static_text 4@ {id} 2 {text} "-----------------------------------------------------------------------------" {relCoordX} 5 {relCoordY} 31@ {width} 325 {height} 20
+{529} 31@ += 30
+{536} sf_dxut_dialog_add_button 4@ {id} 17 {text} "CHECK ACCSES" {relCoordX} 70 {relCoordY} 31@ {width} 193 {height} 30
+{567} 31@ += 30
+{574} sf_dxut_dialog_add_static_text 4@ {id} 2 {text} "--------------------------------------------------------------------------" {relCoordX} 5 {relCoordY} 31@ {width} 325 {height} 20
+{667} 31@ += 45
+{674} 30@, 29@ = sf_get_screen_resolution 
+{682} 30@ /= 2
+{689} 29@ /= 2
+{696} 30@ -= 165
+{704} set_lvar_int_to_lvar_int 28@ = 31@
+{712} 28@ /= 2
+{719} sub_int_lvar_from_int_lvar 29@ -= 28@
+{727} sf_dxut_dialog_set_coords_and_dims 4@ {coordX} 30@ {coordY} 29@ {width} 330 {height} 31@
+{744} 1@ = sf_dxut_create_dialog "--------------------------------------"
+{789} sf_dxut_dialog_set_visibility 1@ {isVisible} False
+{796} sf_dxut_dialog_set_title_visibility 1@ {isVisible} True
+{803} sf_dxut_dialog_set_minimized 1@ {isMinimized} False
+{810} sf_dxut_dialog_set_background_color 1@ {color} -939524096
+{820} sf_dxut_dialog_add_checkbox 1@ {id} 0 {text} "" {relCoordX} 158 {relCoordY} 4 {width} 20 {height} 20
+{838} sf_dxut_dialog_add_checkbox 1@ {id} 1 {text} "" {relCoordX} 178 {relCoordY} 4 {width} 20 {height} 20
+{856} sf_dxut_dialog_add_static_text 1@ {id} 2 {text} "--------------------------------------" {relCoordX} 5 {relCoordY} 20 {width} 195 {height} 20
+{912} sf_dxut_dialog_add_static_text 1@ {id} 3 {text} "{FF0000}DM FEATURES" {relCoordX} 5 {relCoordY} 5 {width} 195 {height} 20
+{949} 31@ = 40
+{956} sf_dxut_dialog_add_checkbox 1@ {id} 50 {text} "FastAimbot" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{985} 31@ += 20
+{992} sf_dxut_dialog_add_checkbox 1@ {id} 51 {text} "Triggerbot" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1021} 31@ += 20
+{1028} sf_dxut_dialog_add_checkbox 1@ {id} 52 {text} "AimAssist" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1056} 31@ += 20
+{1063} sf_dxut_dialog_add_checkbox 1@ {id} 53 {text} "SilentAim" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1091} 31@ += 20
+{1098} sf_dxut_dialog_add_checkbox 1@ {id} 60 {text} "FlickShot" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1126} 31@ += 20
+{1133} sf_dxut_dialog_add_checkbox 1@ {id} 61 {text} "+ImpossibleHits" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1167} 31@ += 20
+{1174} sf_dxut_dialog_add_checkbox 1@ {id} 57 {text} "+Laufscript" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1204} 31@ += 20
+{1211} sf_dxut_dialog_add_checkbox 1@ {id} 54 {text} "+noSpread" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1239} 31@ += 20
+{1246} sf_dxut_dialog_add_checkbox 1@ {id} 55 {text} "+NoRelAmmo" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1275} 31@ += 20
+{1282} sf_dxut_dialog_add_checkbox 1@ {id} 56 {text} "+noStun" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1308} 31@ += 20
+{1315} sf_dxut_dialog_add_checkbox 1@ {id} 58 {text} "+CBugHelper" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1345} 31@ += 20
+{1352} sf_dxut_dialog_add_checkbox 1@ {id} 59 {text} "+AutoScroll" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1382} 31@ += 45
+{1389} 30@, 29@ = sf_get_screen_resolution 
+{1397} 30@ /= 2
+{1404} 29@ /= 2
+{1411} 30@ -= 100
+{1418} set_lvar_int_to_lvar_int 28@ = 31@
+{1426} 28@ /= 2
+{1433} sub_int_lvar_from_int_lvar 29@ -= 28@
+{1441} 30@ += 250
+{1449} sf_dxut_dialog_set_coords_and_dims 1@ {coordX} 30@ {coordY} 29@ {width} 200 {height} 31@
+{1466} 2@ = sf_dxut_create_dialog "--------------------------------------"
+{1511} sf_dxut_dialog_set_visibility 2@ {isVisible} False
+{1518} sf_dxut_dialog_set_title_visibility 2@ {isVisible} True
+{1525} sf_dxut_dialog_set_minimized 2@ {isMinimized} False
+{1532} sf_dxut_dialog_set_background_color 2@ {color} -939524096
+{1542} sf_dxut_dialog_add_checkbox 2@ {id} 0 {text} "" {relCoordX} 158 {relCoordY} 4 {width} 20 {height} 20
+{1560} sf_dxut_dialog_add_checkbox 2@ {id} 1 {text} "" {relCoordX} 178 {relCoordY} 4 {width} 20 {height} 20
+{1578} sf_dxut_dialog_add_static_text 2@ {id} 2 {text} "--------------------------------------" {relCoordX} 5 {relCoordY} 20 {width} 195 {height} 20
+{1634} sf_dxut_dialog_add_static_text 2@ {id} 3 {text} "{FF0000}ESP FEATURES" {relCoordX} 5 {relCoordY} 5 {width} 195 {height} 20
+{1672} 31@ = 40
+{1679} sf_dxut_dialog_add_checkbox 2@ {id} 62 {text} "NameTags" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1706} 31@ += 20
+{1713} sf_dxut_dialog_add_checkbox 2@ {id} 63 {text} "TracersUP" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1741} 31@ += 20
+{1748} sf_dxut_dialog_add_checkbox 2@ {id} 64 {text} "TracersDown" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1778} 31@ += 20
+{1785} sf_dxut_dialog_add_checkbox 2@ {id} 65 {text} "2DBoxes" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1811} 31@ += 20
+{1818} sf_dxut_dialog_add_checkbox 2@ {id} 66 {text} "3DBoxes" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1844} 31@ += 20
+{1851} sf_dxut_dialog_add_checkbox 2@ {id} 69 {text} "Bones" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1875} 31@ += 20
+{1882} sf_dxut_dialog_add_checkbox 2@ {id} 70 {text} "Position" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1909} 31@ += 20
+{1916} sf_dxut_dialog_add_checkbox 2@ {id} 67 {text} "VisualHitbox" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1947} 31@ += 20
+{1954} sf_dxut_dialog_add_checkbox 2@ {id} 74 {text} "GlowFriends" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{1984} 31@ += 20
+{1991} sf_dxut_dialog_add_checkbox 2@ {id} 73 {text} "DarkEnemies" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2021} 31@ += 20
+{2028} sf_dxut_dialog_add_checkbox 2@ {id} 72 {text} "LineToTarget" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2059} 31@ += 20
+{2066} sf_dxut_dialog_add_checkbox 2@ {id} 76 {text} "BoxTarget" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2094} 31@ += 20
+{2101} sf_dxut_dialog_add_checkbox 2@ {id} 68 {text} "CustomNameTags" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2134} 31@ += 20
+{2141} sf_dxut_dialog_add_checkbox 2@ {id} 71 {text} "VehicleESP" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2170} 31@ += 20
+{2177} sf_dxut_dialog_add_checkbox 2@ {id} 75 {text} "FarESP" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2202} 31@ += 45
+{2209} 30@, 29@ = sf_get_screen_resolution 
+{2217} 30@ /= 2
+{2224} 29@ /= 2
+{2231} 30@ -= 100
+{2238} set_lvar_int_to_lvar_int 28@ = 31@
+{2246} 28@ /= 2
+{2253} sub_int_lvar_from_int_lvar 29@ -= 28@
+{2261} 30@ -= 250
+{2269} sf_dxut_dialog_set_coords_and_dims 2@ {coordX} 30@ {coordY} 29@ {width} 200 {height} 31@
+{2286} 3@ = sf_dxut_create_dialog "--------------------------------------"
+{2331} sf_dxut_dialog_set_visibility 3@ {isVisible} False
+{2338} sf_dxut_dialog_set_title_visibility 3@ {isVisible} True
+{2345} sf_dxut_dialog_set_minimized 3@ {isMinimized} False
+{2352} sf_dxut_dialog_set_background_color 3@ {color} -939524096
+{2362} sf_dxut_dialog_add_checkbox 3@ {id} 0 {text} "" {relCoordX} 158 {relCoordY} 4 {width} 20 {height} 20
+{2380} sf_dxut_dialog_add_checkbox 3@ {id} 1 {text} "" {relCoordX} 178 {relCoordY} 4 {width} 20 {height} 20
+{2398} sf_dxut_dialog_add_static_text 3@ {id} 2 {text} "--------------------------------------" {relCoordX} 5 {relCoordY} 20 {width} 195 {height} 20
+{2454} sf_dxut_dialog_add_static_text 3@ {id} 3 {text} "{FF0000}OPT SETTINGS" {relCoordX} 5 {relCoordY} 5 {width} 195 {height} 20
+{2492} 31@ = 40
+{2499} sf_dxut_dialog_add_checkbox 3@ {id} 77 {text} "{FFA600}+LagShootMode" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2539} 31@ += 20
+{2546} sf_dxut_dialog_add_checkbox 3@ {id} 78 {text} "+FriendsMode" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2577} 31@ += 20
+{2584} sf_dxut_dialog_add_checkbox 3@ {id} 79 {text} "+RainbowMode" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2615} 31@ += 20
+{2622} sf_dxut_dialog_add_checkbox 3@ {id} 80 {text} "+FastAimbotX" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2653} 31@ += 20
+{2660} sf_dxut_dialog_add_checkbox 3@ {id} 81 {text} "+FastAimOnShoot" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2694} 31@ += 20
+{2701} sf_dxut_dialog_add_checkbox 3@ {id} 82 {text} "+IgnoreTeamColor" {relCoordX} 5 {relCoordY} 31@ {width} 200 {height} 20
+{2736} 31@ += 10
+{2743} 31@ += 20
+{2750} sf_dxut_dialog_add_static_text 3@ {id} 4 {text} "{FFFFFF}Prediction" {relCoordX} 63 {relCoordY} 31@ {width} 195 {height} 20
+{2787} 31@ += 2
+{2794} sf_dxut_dialog_add_slider 3@ {id} 5 {relCoordX} 10 {relCoordY} 31@ {width} 180 {height} 40 {maxValue} 200
+{2814} 31@ += 30
+{2821} sf_dxut_dialog_add_button 3@ {id} 6 {text} "?" {relCoordX} 80 {relCoordY} 31@ {width} 50 {height} 20
+{2840} 31@ += 20
+{2847} sf_dxut_dialog_add_static_text 3@ {id} 7 {text} "{FFFFFF}AimAssistSpeed" {relCoordX} 45 {relCoordY} 31@ {width} 195 {height} 20
+{2888} 31@ += 2
+{2895} sf_dxut_dialog_add_slider 3@ {id} 8 {relCoordX} 10 {relCoordY} 31@ {width} 180 {height} 40 {maxValue} 50
+{2914} 31@ += 30
+{2921} sf_dxut_dialog_add_button 3@ {id} 9 {text} "?" {relCoordX} 80 {relCoordY} 31@ {width} 50 {height} 20
+{2940} 31@ += 20
+{2947} sf_dxut_dialog_add_static_text 3@ {id} 10 {text} "{FFFFFF}FieldOfView" {relCoordX} 58 {relCoordY} 31@ {width} 195 {height} 20
+{2985} 31@ += 2
+{2992} sf_dxut_dialog_add_slider 3@ {id} 11 {relCoordX} 10 {relCoordY} 31@ {width} 180 {height} 40 {maxValue} 1920
+{3012} 31@ += 30
+{3019} sf_dxut_dialog_add_button 3@ {id} 12 {text} "?" {relCoordX} 80 {relCoordY} 31@ {width} 50 {height} 20
+{3038} 31@ += 20
+{3045} sf_dxut_dialog_add_static_text 3@ {id} 13 {text} "{FFFFFF}FastAimbotSmooth" {relCoordX} 45 {relCoordY} 31@ {width} 195 {height} 20
+{3088} 31@ += 2
+{3095} sf_dxut_dialog_add_slider 3@ {id} 14 {relCoordX} 10 {relCoordY} 31@ {width} 180 {height} 40 {maxValue} 50
+{3114} 31@ += 30
+{3121} sf_dxut_dialog_add_button 3@ {id} 15 {text} "?" {relCoordX} 80 {relCoordY} 31@ {width} 50 {height} 20
+{3140} 31@ += 45
+{3147} 30@, 29@ = sf_get_screen_resolution 
+{3155} 30@ /= 2
+{3162} 29@ /= 2
+{3169} 30@ -= 100
+{3176} set_lvar_int_to_lvar_int 28@ = 31@
+{3184} 28@ /= 2
+{3191} sub_int_lvar_from_int_lvar 29@ -= 28@
+{3199} sf_dxut_dialog_set_coords_and_dims 3@ {coordX} 30@ {coordY} 29@ {width} 200 {height} 31@
+{3216} gosub @Noname_8897
+{3223} sf_start_new_script_from_label @Noname_20891 {var_newScriptPtrTo} 30@
+{3234} sf_start_new_script_from_label @Noname_15229 {var_newScriptPtrTo} 30@
+{3245} sf_start_new_script_from_label @Noname_21445 {var_newScriptPtrTo} 30@
+{3256} sf_start_new_script_from_label @Noname_11556 {var_newScriptPtrTo} 30@
+{3267} sf_start_new_script_from_label @Noname_12884 {var_newScriptPtrTo} 30@
+{3278} sf_start_new_script_from_label @Noname_22829 {var_newScriptPtrTo} 30@
+{3289} gosub @Noname_25243
+{3296} sf_start_new_script_from_label @Noname_40503 {var_newScriptPtrTo} 30@
+
+:Noname_3307
+{3307} wait 0
+{3311} if 
+hex
+{3315}  21 8B
+end
+{3317} goto_if_false @Noname_3668
+{3324} if or
+{3328}   is_key_pressed KeyCode.OemMinus
+{3333}   test_cheat "RR"
+{3339} goto_if_false @Noname_3668
+{3346} set_cleo_shared_var 23 {value} 6969
+
+:Noname_3353
+{3353} wait 0
+{3357}   not is_key_pressed KeyCode.OemMinus
+{3362} goto_if_false @Noname_3353
+{3369} 0@ = 0@ ^ 1
+{3379} if 
+{3383}   0@ == 1
+{3390} goto_if_false @Noname_3469
+{3397} samp_set_cursor_mode SampCursorMode.LockCam
+{3401} get_cleo_shared_var 18 {var_result} 30@
+{3408} if 
+{3412}   30@ == 1337
+{3420} goto_if_false @Noname_3455
+{3427} sf_dxut_dialog_set_visibility 1@ {isVisible} True
+{3434} sf_dxut_dialog_set_visibility 2@ {isVisible} True
+{3441} sf_dxut_dialog_set_visibility 3@ {isVisible} True
+{3448} goto @Noname_3462
+
+:Noname_3455
+{3455} sf_dxut_dialog_set_visibility 4@ {isVisible} True
+
+:Noname_3462
+{3462} goto @Noname_3668
+
+:Noname_3469
+{3469} samp_set_cursor_visibility False
+{3473} if 
+{3477}   not sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 1
+{3484} goto_if_false @Noname_3498
+{3491} sf_dxut_dialog_set_visibility 1@ {isVisible} False
+
+:Noname_3498
+{3498} if 
+{3502}   not sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 1
+{3509} goto_if_false @Noname_3523
+{3516} sf_dxut_dialog_set_visibility 2@ {isVisible} False
+
+:Noname_3523
+{3523} get_cleo_shared_var 18 {var_result} 30@
+{3530} if 
+{3534}   30@ <> 1337
+{3542} goto_if_false @Noname_3574
+{3549} if 
+{3553}   not sf_dxut_dialog_is_checkbox_checked 4@ {checkboxId} 1
+{3560} goto_if_false @Noname_3574
+{3567} sf_dxut_dialog_set_visibility 4@ {isVisible} False
+
+:Noname_3574
+{3574} if 
+{3578}   not sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 1
+{3585} goto_if_false @Noname_3599
+{3592} sf_dxut_dialog_set_visibility 3@ {isVisible} False
+
+:Noname_3599
+{3599} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 0 {isChecked} False
+{3608} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 0 {isChecked} False
+{3617} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 0 {isChecked} False
+{3626} sf_dxut_dialog_set_status_of_checkbox 4@ {id} 0 {isChecked} False
+{3635} get_cleo_shared_var 18 {var_result} 30@
+{3642} if 
+{3646}   30@ == 1337
+{3654} goto_if_false @Noname_3668
+{3661} gosub @Noname_15810
+
+:Noname_3668
+{3668} if 
+{3672}   0@ == 1
+{3679} goto_if_false @Noname_8724
+{3686} get_cleo_shared_var 21 {var_result} 31@
+{3693} if 
+{3697}   31@ == 1
+{3704} goto_if_false @Noname_7355
+{3711} set_cleo_shared_var 21 {value} 0
+{3717} sf_dxut_dialog_set_visibility 1@ {isVisible} True
+{3724} sf_dxut_dialog_set_visibility 2@ {isVisible} True
+{3731} sf_dxut_dialog_set_visibility 3@ {isVisible} True
+{3738} if 
+{3742}   not does_file_exist "CLEO\OP-HaX.ini"
+{3761} goto_if_false @Noname_5358
+{3768}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbot"
+{3811}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Triggerbot"
+{3854}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AimAssist"
+{3896}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "SilentAim"
+{3938}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Laufscript"
+{3981}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noSpread"
+{4022}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noRelAmmo"
+{4064}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noStun"
+{4103}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CBugHelper"
+{4146}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AutoScroll"
+{4189}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FlickShot"
+{4231}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DistanceHack"
+{4276}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "NameTags"
+{4317}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersUP"
+{4359}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersDown"
+{4403}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "2DBoxes"
+{4443}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "3DBoxes"
+{4483}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Bones"
+{4521}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Position"
+{4562}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VisualHitbox"
+{4607}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+{4651}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DarkEnemies"
+{4695}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LineToTarget"
+{4740}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "BoxTarget"
+{4782}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CustomNameTags"
+{4829}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VehicleESP"
+{4872}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FarESP"
+{4911}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LagShotCalc."
+{4956}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FriendsMode"
+{5000}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "RainbowMode"
+{5044}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbotX"
+{5088}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimOnShoot"
+{5135}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "IgnoreSameColor"
+{5183}   write_int_to_ini_file 30 {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "Prediction"
+{5224}   write_int_to_ini_file 5 {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "AimAssistSpeed"
+{5269}   write_int_to_ini_file 100 {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "FieldOfView"
+{5311}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "FastAimbotSmooth"
+
+:Noname_5358
+{5358}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbot"
+{5402} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 50 {isChecked} 31@
+{5412}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "Triggerbot"
+{5456} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 51 {isChecked} 31@
+{5466}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "AimAssist"
+{5509} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 52 {isChecked} 31@
+{5519}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "SilentAim"
+{5562} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 53 {isChecked} 31@
+{5572}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "Laufscript"
+{5616} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 57 {isChecked} 31@
+{5626}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "noSpread"
+{5668} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 54 {isChecked} 31@
+{5678}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "noRelAmmo"
+{5721} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 55 {isChecked} 31@
+{5731}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "noStun"
+{5771} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 56 {isChecked} 31@
+{5781}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "CBugHelper"
+{5825} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 58 {isChecked} 31@
+{5835}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "AutoScroll"
+{5879} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 59 {isChecked} 31@
+{5889}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FlickShot"
+{5932} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 60 {isChecked} 31@
+{5942}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "DistanceHack"
+{5988} sf_dxut_dialog_set_status_of_checkbox 1@ {id} 61 {isChecked} 31@
+{5998}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "NameTags"
+{6040} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 62 {isChecked} 31@
+{6050}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersUP"
+{6093} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 63 {isChecked} 31@
+{6103}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersDown"
+{6148} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 64 {isChecked} 31@
+{6158}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "2DBoxes"
+{6199} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 65 {isChecked} 31@
+{6209}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "3DBoxes"
+{6250} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 66 {isChecked} 31@
+{6260}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "Bones"
+{6299} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 69 {isChecked} 31@
+{6309}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "Position"
+{6351} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 70 {isChecked} 31@
+{6361}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "VisualHitbox"
+{6407} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 67 {isChecked} 31@
+{6417}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+{6462} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 74 {isChecked} 31@
+{6472}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "DarkEnemies"
+{6517} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 73 {isChecked} 31@
+{6527}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "LineToTarget"
+{6573} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 72 {isChecked} 31@
+{6583}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "BoxTarget"
+{6626} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 76 {isChecked} 31@
+{6636}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "CustomNameTags"
+{6684} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 68 {isChecked} 31@
+{6694}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "VehicleESP"
+{6738} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 71 {isChecked} 31@
+{6748}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FarESP"
+{6788} sf_dxut_dialog_set_status_of_checkbox 2@ {id} 75 {isChecked} 31@
+{6798}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "LagShotCalc."
+{6844} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 77 {isChecked} 31@
+{6854}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FriendsMode"
+{6899} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 78 {isChecked} 31@
+{6909}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "RainbowMode"
+{6954} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 79 {isChecked} 31@
+{6964}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbotX"
+{7009} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 80 {isChecked} 31@
+{7019}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimOnShoot"
+{7067} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 81 {isChecked} 31@
+{7077}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Settings" {key} "IgnoreSameColor"
+{7126} sf_dxut_dialog_set_status_of_checkbox 3@ {id} 82 {isChecked} 31@
+{7136}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Values" {key} "Prediction"
+{7178} sf_dxut_dialog_set_slider_value 3@ {id} 5 {value} 31@
+{7188}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Values" {key} "AimAssistSpeed"
+{7234} sf_dxut_dialog_set_slider_value 3@ {id} 8 {value} 31@
+{7244}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Values" {key} "FieldOfView"
+{7287} sf_dxut_dialog_set_slider_value 3@ {id} 11 {value} 31@
+{7297}   31@ = read_int_from_ini_file "CLEO\OP-HaX.ini" {section} "Values" {key} "FastAimbotSmooth"
+{7345} sf_dxut_dialog_set_slider_value 3@ {id} 14 {value} 31@
+
+:Noname_7355
+{7355} if 
+{7359}   not samp_is_cursor_active 
+{7361} goto_if_false @Noname_7372
+{7368} samp_set_cursor_mode SampCursorMode.LockCam
+
+:Noname_7372
+{7372} if or
+{7376}   sf_dxut_dialog_is_minimized 2@
+{7381}   sf_dxut_dialog_is_minimized 1@
+{7386}   sf_dxut_dialog_is_minimized 3@
+{7391}   sf_dxut_dialog_is_minimized 4@
+{7396} goto_if_false @Noname_7431
+{7403} sf_dxut_dialog_set_minimized 1@ {isMinimized} False
+{7410} sf_dxut_dialog_set_minimized 2@ {isMinimized} False
+{7417} sf_dxut_dialog_set_minimized 3@ {isMinimized} False
+{7424} sf_dxut_dialog_set_minimized 4@ {isMinimized} False
+
+:Noname_7431
+{7431} if 
+{7435}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 0
+{7442} goto_if_false @Noname_7598
+{7449} 31@, 30@ = sf_get_cursor_coord 
+{7457} 31@ -= 167
+{7465} 30@ -= 30
+{7472} 29@, 28@, 27@, 26@ = sf_dxut_dialog_get_coords_and_dims 1@
+{7489} sf_dxut_dialog_set_coords_and_dims 1@ {coordX} 31@ {coordY} 30@ {width} 27@ {height} 26@
+{7506}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "AimFeatures" {key} "PanelPosX"
+{7552}   write_int_to_ini_file 30@ {path} "CLEO\OP-HaX.ini" {section} "AimFeatures" {key} "PanelPosY"
+
+:Noname_7598
+{7598} if 
+{7602}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 0
+{7609} goto_if_false @Noname_7765
+{7616} 31@, 30@ = sf_get_cursor_coord 
+{7624} 31@ -= 167
+{7632} 30@ -= 30
+{7639} 29@, 28@, 27@, 26@ = sf_dxut_dialog_get_coords_and_dims 2@
+{7656} sf_dxut_dialog_set_coords_and_dims 2@ {coordX} 31@ {coordY} 30@ {width} 27@ {height} 26@
+{7673}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "ESPFeatures" {key} "PanelPosX"
+{7719}   write_int_to_ini_file 30@ {path} "CLEO\OP-HaX.ini" {section} "ESPFeatures" {key} "PanelPosY"
+
+:Noname_7765
+{7765} if 
+{7769}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 0
+{7776} goto_if_false @Noname_7932
+{7783} 31@, 30@ = sf_get_cursor_coord 
+{7791} 31@ -= 167
+{7799} 30@ -= 30
+{7806} 29@, 28@, 27@, 26@ = sf_dxut_dialog_get_coords_and_dims 3@
+{7823} sf_dxut_dialog_set_coords_and_dims 3@ {coordX} 31@ {coordY} 30@ {width} 27@ {height} 26@
+{7840}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "OPTSettings" {key} "PanelPosX"
+{7886}   write_int_to_ini_file 30@ {path} "CLEO\OP-HaX.ini" {section} "OPTSettings" {key} "PanelPosY"
+
+:Noname_7932
+{7932} if 
+{7936}   sf_dxut_dialog_is_checkbox_checked 4@ {checkboxId} 0
+{7943} goto_if_false @Noname_8089
+{7950} 31@, 30@ = sf_get_cursor_coord 
+{7958} 31@ -= 297
+{7966} 30@ -= 30
+{7973} 29@, 28@, 27@, 26@ = sf_dxut_dialog_get_coords_and_dims 4@
+{7990} sf_dxut_dialog_set_coords_and_dims 4@ {coordX} 31@ {coordY} 30@ {width} 27@ {height} 26@
+{8007}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "OP_HaX" {key} "PanelPosX"
+{8048}   write_int_to_ini_file 30@ {path} "CLEO\OP-HaX.ini" {section} "OP_HaX" {key} "PanelPosY"
+
+:Noname_8089
+{8089} 31@ = 50
+
+:Noname_8096
+{8096} get_cleo_shared_var 31@ {var_result} 30@
+{8104} if 
+{8108}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 31@
+{8116} goto_if_false @Noname_8155
+{8123} if 
+{8127}   30@ == 0
+{8134} goto_if_false @Noname_8148
+{8141} set_cleo_shared_var 31@ {value} 1
+
+:Noname_8148
+{8148} goto @Noname_8180
+
+:Noname_8155
+{8155} if 
+{8159}   30@ == 1
+{8166} goto_if_false @Noname_8180
+{8173} set_cleo_shared_var 31@ {value} 0
+
+:Noname_8180
+{8180} 31@ += 1
+{8187}   31@ > 61
+{8194} goto_if_false @Noname_8096
+{8201} 31@ = 62
+
+:Noname_8208
+{8208} get_cleo_shared_var 31@ {var_result} 30@
+{8216} if 
+{8220}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 31@
+{8228} goto_if_false @Noname_8267
+{8235} if 
+{8239}   30@ == 0
+{8246} goto_if_false @Noname_8260
+{8253} set_cleo_shared_var 31@ {value} 1
+
+:Noname_8260
+{8260} goto @Noname_8292
+
+:Noname_8267
+{8267} if 
+{8271}   30@ == 1
+{8278} goto_if_false @Noname_8292
+{8285} set_cleo_shared_var 31@ {value} 0
+
+:Noname_8292
+{8292} 31@ += 1
+{8299}   31@ > 76
+{8306} goto_if_false @Noname_8208
+{8313} 31@ = 77
+
+:Noname_8320
+{8320} get_cleo_shared_var 31@ {var_result} 30@
+{8328} if 
+{8332}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 31@
+{8340} goto_if_false @Noname_8379
+{8347} if 
+{8351}   30@ == 0
+{8358} goto_if_false @Noname_8372
+{8365} set_cleo_shared_var 31@ {value} 1
+
+:Noname_8372
+{8372} goto @Noname_8404
+
+:Noname_8379
+{8379} if 
+{8383}   30@ == 1
+{8390} goto_if_false @Noname_8404
+{8397} set_cleo_shared_var 31@ {value} 0
+
+:Noname_8404
+{8404} 31@ += 1
+{8411}   31@ > 82
+{8418} goto_if_false @Noname_8320
+{8425} get_cleo_shared_var 23 {var_result} 31@
+{8432} if 
+{8436}   31@ == 6969
+{8444} goto_if_false @Noname_8503
+{8451} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 8
+{8461}   30@ = allocate_memory 60
+{8468} string_format 30@ {format} "%d" {args} 31@ 
+{8481}   sf_dxut_dialog_set_text_of_control 3@ {id} 9 {text} 30@
+{8491} set_cleo_shared_var 7 {value} 31@
+{8498} free_memory 30@
+
+:Noname_8503
+{8503} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 11
+{8513} cset_lvar_float_to_lvar_int 31@ =# 31@
+{8521} get_cleo_shared_var 10 {var_result} 29@
+{8528} if 
+{8532}   not is_float_lvar_equal_to_float_lvar 31@ == 29@
+{8540} goto_if_false @Noname_8598
+{8547}   30@ = allocate_memory 60
+{8554} string_format 30@ {format} "%0.1f" {args} 31@ 
+{8570}   sf_dxut_dialog_set_text_of_control 3@ {id} 12 {text} 30@
+{8580} set_cleo_shared_var 10 {value} 31@
+{8587} set_cleo_shared_var 48 {value} 1
+{8593} free_memory 30@
+
+:Noname_8598
+{8598} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 5
+{8608} cset_lvar_float_to_lvar_int 31@ =# 31@
+{8616}   30@ = allocate_memory 60
+{8623} string_format 30@ {format} "%0.1f" {args} 31@ 
+{8639}   sf_dxut_dialog_set_text_of_control 3@ {id} 6 {text} 30@
+{8649} set_cleo_shared_var 4 {value} 31@
+{8656} free_memory 30@
+{8661} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 14
+{8671} cset_lvar_float_to_lvar_int 31@ =# 31@
+{8679}   30@ = allocate_memory 60
+{8686} string_format 30@ {format} "%0.1f" {args} 31@ 
+{8702}   sf_dxut_dialog_set_text_of_control 3@ {id} 15 {text} 30@
+{8712} set_cleo_shared_var 13 {value} 31@
+{8719} free_memory 30@
+
+:Noname_8724
+{8724} goto @Noname_3307
+
+:Noname_8731
+{8731} 0@ = get_label_pointer 0@
+{8739} 0@ += 4
+{8746} 2@ = 0
+
+:Noname_8753
+{8753}   not is_int_lvar_greater_or_equal_to_int_lvar 2@ >= 1@
+{8761} goto_if_false @Noname_8836
+{8768} 3@ = 1
+
+:Noname_8775
+{8775}   3@ <> 0
+{8782} goto_if_false @Noname_8815
+{8789} 3@ = read_memory 0@ {size} 1 {vp} False
+{8801} 0@ += 1
+{8808} goto @Noname_8775
+
+:Noname_8815
+{8815} 0@ += 3
+{8822} 2@ += 1
+{8829} goto @Noname_8753
+
+:Noname_8836
+{8836} cleo_return 1 {retParams} 0@ 
+{8844} 0@ += 36
+{8851} 0@ *= 112
+{8858} 0@ += 13150904
+{8868} add_int_lvar_to_int_lvar 0@ += 1@
+{8876} 2@ = read_memory 0@ {size} 3@ {vp} False
+{8889} cleo_return 1 {retParams} 2@ 
+
+:Noname_8897
+{8897} sf_start_new_script_from_label @Noname_35951 {var_newScriptPtrTo} 30@
+{8908} sf_start_new_script_from_label @Noname_31339 {var_newScriptPtrTo} 30@
+{8919} sf_start_new_script_from_label @Noname_10433 {var_newScriptPtrTo} 30@
+{8930} sf_start_new_script_from_label @Noname_39676 {var_newScriptPtrTo} 30@
+{8941} sf_start_new_script_from_label @Noname_10593 {var_newScriptPtrTo} 30@
+{8952} sf_start_new_script_from_label @Noname_10754 {var_newScriptPtrTo} 30@
+{8963} sf_start_new_script_from_label @Noname_10844 {var_newScriptPtrTo} 30@
+{8974} sf_start_new_script_from_label @Noname_11012 {var_newScriptPtrTo} 30@
+{8985} sf_start_new_script_from_label @Noname_11147 {var_newScriptPtrTo} 30@
+{8996} sf_start_new_script_from_label @Noname_9031 {var_newScriptPtrTo} 30@
+{9007} sf_start_new_script_from_label @Noname_37625 {var_newScriptPtrTo} 30@
+{9018} sf_start_new_script_from_label @Noname_9700 {var_newScriptPtrTo} 30@
+{9029} return 
+
+:Noname_9031
+{9031} nop 
+
+:Noname_9033
+{9033} wait 0
+{9037}   samp_is_available 
+{9039} goto_if_false @Noname_9033
+
+:Noname_9046
+{9046} wait 0
+{9050} get_cleo_shared_var 18 {var_result} 31@
+{9057} if 
+{9061}   31@ == 1337
+{9069} goto_if_false @Noname_9083
+{9076} goto @Noname_9090
+
+:Noname_9083
+{9083} goto @Noname_9046
+
+:Noname_9090
+{9090} 29@ = 0
+
+:Noname_9097
+{9097} wait 0
+{9101} get_cleo_shared_var 60 {var_result} 31@
+{9108} if 
+{9112}   31@ == 1
+{9119} goto_if_false @Noname_9693
+{9126} if 
+{9130}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{9136} goto_if_false @Noname_9693
+{9143} if 
+{9147} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{9157} goto_if_false @Noname_9693
+{9164} 29@ = 0
+
+:Noname_9171
+{9171} wait 10
+{9175} if 
+{9179} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 6@ 7@ 8@ 
+{9201} goto_if_false @Noname_9655
+{9208} 9@, 10@, 11@ = get_active_camera_coordinates 
+{9219} cleo_call @Noname_20812 {numArgs} 6 {args} 6@ 7@ 8@ 9@ 10@ 11@ 12@ 
+{9250} cleo_call @Noname_20856 {numArgs} 4 {args} 6@ 7@ 9@ 10@ 13@ 
+{9275} 12@ -= 270.0
+{9285} 13@ -= 90.0
+{9295} 12@ = sf_degrees_to_radians 12@
+{9303} 13@ = sf_degrees_to_radians 13@
+{9311} 14@ = get_current_char_weapon $scplayer
+{9319} if and
+{9323}   14@ >= 22
+{9330}   14@ <= 29
+{9337} goto_if_false @Noname_9364
+{9344} 12@ -= 0.0778
+{9354} 13@ += 0.0425
+
+:Noname_9364
+{9364} if 
+{9368}   14@ == 32
+{9375} goto_if_false @Noname_9402
+{9382} 12@ -= 0.0778
+{9392} 13@ += 0.0425
+
+:Noname_9402
+{9402} if and
+{9406}   14@ >= 30
+{9413}   14@ <= 31
+{9420} goto_if_false @Noname_9447
+{9427} 12@ -= 0.052
+{9437} 13@ += 0.028
+
+:Noname_9447
+{9447} if 
+{9451}   14@ == 33
+{9458} goto_if_false @Noname_9485
+{9465} 12@ -= 0.0357
+{9475} 13@ += 0.019
+
+:Noname_9485
+{9485} 15@ = read_memory 11989592 {size} 4 {vp} False
+{9499} 16@ = read_memory 11989576 {size} 4 {vp} False
+{9513} sub_float_lvar_from_float_lvar 15@ -= 13@
+{9521} sub_float_lvar_from_float_lvar 16@ -= 12@
+{9529} cleo_call @Noname_20677 {numArgs} 2 {args} 15@ 16@ 15@ 16@ 
+{9551} if and
+{9555}   15@ < 0.3
+{9565}   15@ > -0.3
+{9575}   16@ < 0.3
+{9585}   16@ > -0.3
+{9595} goto_if_false @Noname_9655
+{9602} write_memory 11989592 {size} 4 {value} 13@ {vp} False
+{9616} get_cleo_shared_var 80 {var_result} 31@
+{9623} if 
+{9627}   31@ == 1
+{9634} goto_if_false @Noname_9655
+{9641} write_memory 11989576 {size} 4 {value} 12@ {vp} False
+
+:Noname_9655
+{9655} 29@ += 1
+{9662}   29@ > 20
+{9669} goto_if_false @Noname_9171
+
+:Noname_9676
+{9676} wait 0
+{9680}   not is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{9686} goto_if_false @Noname_9676
+
+:Noname_9693
+{9693} goto @Noname_9097
+
+:Noname_9700
+{9700} nop 
+
+:Noname_9702
+{9702} wait 0
+{9706}   samp_is_available 
+{9708} goto_if_false @Noname_9702
+
+:Noname_9715
+{9715} wait 0
+{9719} get_cleo_shared_var 61 {var_result} 31@
+{9726} if 
+{9730}   31@ == 1
+{9737} goto_if_false @Noname_10323
+{9744} cleo_call @Noname_10380 {numArgs} 4 {args} 24 8 -1 4 1@ 
+{9765} cleo_call @Noname_10380 {numArgs} 4 {args} 23 8 -1 4 2@ 
+{9786} cleo_call @Noname_10380 {numArgs} 4 {args} 25 8 -1 4 3@ 
+{9807} cleo_call @Noname_10380 {numArgs} 4 {args} 26 8 -1 4 4@ 
+{9828} cleo_call @Noname_10380 {numArgs} 4 {args} 27 8 -1 4 5@ 
+{9849} cleo_call @Noname_10380 {numArgs} 4 {args} 28 8 -1 4 6@ 
+{9870} cleo_call @Noname_10380 {numArgs} 4 {args} 30 8 -1 4 7@ 
+{9891} cleo_call @Noname_10380 {numArgs} 4 {args} 31 8 -1 4 8@ 
+{9912} cleo_call @Noname_10380 {numArgs} 4 {args} 32 8 -1 4 9@ 
+{9933} wait 400
+{9938} cleo_call @Noname_10330 {numArgs} 4 {args} 24 8 999.0 4 
+{9959} cleo_call @Noname_10330 {numArgs} 4 {args} 23 8 999.0 4 
+{9980} cleo_call @Noname_10330 {numArgs} 4 {args} 25 8 999.0 4 
+{10001} cleo_call @Noname_10330 {numArgs} 4 {args} 26 8 999.0 4 
+{10022} cleo_call @Noname_10330 {numArgs} 4 {args} 27 8 999.0 4 
+{10043} cleo_call @Noname_10330 {numArgs} 4 {args} 28 8 999.0 4 
+{10064} cleo_call @Noname_10330 {numArgs} 4 {args} 30 8 999.0 4 
+{10085} cleo_call @Noname_10330 {numArgs} 4 {args} 31 8 999.0 4 
+{10106} cleo_call @Noname_10330 {numArgs} 4 {args} 32 8 999.0 4 
+
+:Noname_10127
+{10127} wait 0
+{10131} get_cleo_shared_var 61 {var_result} 31@
+{10138}   31@ == 0
+{10145} goto_if_false @Noname_10127
+{10152} cleo_call @Noname_10330 {numArgs} 4 {args} 24 8 1@ 4 
+{10171} cleo_call @Noname_10330 {numArgs} 4 {args} 23 8 2@ 4 
+{10190} cleo_call @Noname_10330 {numArgs} 4 {args} 25 8 3@ 4 
+{10209} cleo_call @Noname_10330 {numArgs} 4 {args} 26 8 4@ 4 
+{10228} cleo_call @Noname_10330 {numArgs} 4 {args} 27 8 5@ 4 
+{10247} cleo_call @Noname_10330 {numArgs} 4 {args} 28 8 6@ 4 
+{10266} cleo_call @Noname_10330 {numArgs} 4 {args} 30 8 7@ 4 
+{10285} cleo_call @Noname_10330 {numArgs} 4 {args} 31 8 8@ 4 
+{10304} cleo_call @Noname_10330 {numArgs} 4 {args} 32 8 9@ 4 
+
+:Noname_10323
+{10323} goto @Noname_9715
+
+:Noname_10330
+{10330} 0@ += 36
+{10337} 0@ *= 112
+{10344} 0@ += 13150904
+{10354} add_int_lvar_to_int_lvar 0@ += 1@
+{10362} write_memory 0@ {size} 3@ {value} 2@ {vp} False
+{10375} cleo_return 0 {retParams} 
+
+:Noname_10380
+{10380} 0@ += 36
+{10387} 0@ *= 112
+{10394} 0@ += 13150904
+{10404} add_int_lvar_to_int_lvar 0@ += 1@
+{10412} 2@ = read_memory 0@ {size} 3@ {vp} False
+{10425} cleo_return 1 {retParams} 2@ 
+
+:Noname_10433
+{10433} nop 
+
+:Noname_10435
+{10435} wait 0
+{10439}   samp_is_available 
+{10441} goto_if_false @Noname_10435
+{10448}   samp_hook_chat_command_as_local ".patchspread" {callback} @Noname_10546
+
+:Noname_10469
+{10469} wait 0
+{10473} get_cleo_shared_var 54 {var_result} 31@
+{10480} if 
+{10484}   31@ == 1
+{10491} goto_if_false @Noname_10539
+
+:Noname_10498
+{10498} wait 0
+{10502} write_memory 12045768 {size} 4 {value} 0.0 {vp} False
+{10518} get_cleo_shared_var 54 {var_result} 31@
+{10525}   31@ == 0
+{10532} goto_if_false @Noname_10498
+
+:Noname_10539
+{10539} goto @Noname_10469
+
+:Noname_10546
+{10546} print_formatted_now "Patched Bullet Spread" {time} 1000
+{10575} write_memory 7603280 {size} 10 {value} -1869574000 {vp} False
+{10591} sf_command_return 
+
+:Noname_10593
+{10593} nop 
+
+:Noname_10595
+{10595} wait 0
+{10599}   samp_is_available 
+{10601} goto_if_false @Noname_10595
+
+:Noname_10608
+{10608} wait 0
+{10612} get_cleo_shared_var 55 {var_result} 31@
+{10619} if 
+{10623}   31@ == 1
+{10630} goto_if_false @Noname_10747
+
+:Noname_10637
+{10637} wait 0
+{10641} get_cleo_shared_var 55 {var_result} 31@
+{10648} if 
+{10652}   31@ == 0
+{10659} goto_if_false @Noname_10673
+{10666} goto @Noname_10734
+
+:Noname_10673
+{10673} if or
+{10677}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{10683}   is_key_pressed KeyCode.RightButton
+{10687} goto_if_false @Noname_10714
+{10694} write_memory 9867640 {size} 1 {value} 1 {vp} False
+{10707} goto @Noname_10727
+
+:Noname_10714
+{10714} write_memory 9867640 {size} 1 {value} 0 {vp} False
+
+:Noname_10727
+{10727} goto @Noname_10637
+
+:Noname_10734
+{10734} write_memory 9867640 {size} 1 {value} 0 {vp} False
+
+:Noname_10747
+{10747} goto @Noname_10608
+
+:Noname_10754
+{10754} nop 
+
+:Noname_10756
+{10756} wait 0
+{10760}   samp_is_available 
+{10762} goto_if_false @Noname_10756
+
+:Noname_10769
+{10769} wait 0
+{10773} get_cleo_shared_var 56 {var_result} 31@
+{10780} if 
+{10784}   31@ == 1
+{10791} goto_if_false @Noname_10837
+
+:Noname_10798
+{10798} wait 0
+{10802} set_char_uses_upperbody_damage_anims_only $scplayer {state} True
+{10809} get_cleo_shared_var 56 {var_result} 31@
+{10816}   31@ == 0
+{10823} goto_if_false @Noname_10798
+{10830} set_char_uses_upperbody_damage_anims_only $scplayer {state} False
+
+:Noname_10837
+{10837} goto @Noname_10769
+
+:Noname_10844
+{10844} nop 
+
+:Noname_10846
+{10846} wait 0
+{10850}   samp_is_available 
+{10852} goto_if_false @Noname_10846
+
+:Noname_10859
+{10859} wait 0
+{10863} get_cleo_shared_var 57 {var_result} 31@
+{10870} if 
+{10874}   31@ == 1
+{10881} goto_if_false @Noname_11005
+{10888} if 
+{10892}   not is_char_stopped $scplayer
+{10897} goto_if_false @Noname_11005
+{10904} if 
+{10908}   not is_char_in_any_car $scplayer
+{10913} goto_if_false @Noname_11005
+{10920} if and
+{10924}   not is_key_pressed KeyCode.Alt
+{10928}   not is_key_pressed KeyCode.RightButton
+{10932}   not is_key_pressed KeyCode.LeftButton
+{10936}   not is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{10942} goto_if_false @Noname_11005
+{10949} if or
+{10953}   is_button_pressed PadId.Pad1 {buttonId} Button.LeftStickX
+{10959}   is_button_pressed PadId.Pad1 {buttonId} Button.LeftStickY
+{10965} goto_if_false @Noname_11005
+{10972} 8@ = 12006488
+{10982} 8@ += 32
+{10989} write_memory 8@ {size} 1 {value} 255 {vp} False
+{11001} wait 100
+
+:Noname_11005
+{11005} goto @Noname_10859
+
+:Noname_11012
+{11012} nop 
+
+:Noname_11014
+{11014} wait 0
+{11018}   samp_is_available 
+{11020} goto_if_false @Noname_11014
+
+:Noname_11027
+{11027} wait 0
+{11031} get_cleo_shared_var 58 {var_result} 31@
+{11038} if 
+{11042}   31@ == 1
+{11049} goto_if_false @Noname_11140
+{11056} if 
+{11060}   not is_char_in_any_car $scplayer
+{11065} goto_if_false @Noname_11140
+{11072} if 
+{11076} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{11086} goto_if_false @Noname_11140
+{11093} if 
+{11097}   is_char_shooting $scplayer
+{11102} goto_if_false @Noname_11140
+
+:Noname_11109
+{11109} wait 0
+{11113}   not is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{11119} goto_if_false @Noname_11109
+{11126} cleo_call @Noname_11448 {numArgs} 2 {args} 67 10 
+
+:Noname_11140
+{11140} goto @Noname_11027
+
+:Noname_11147
+{11147} nop 
+
+:Noname_11149
+{11149} wait 0
+{11153}   samp_is_available 
+{11155} goto_if_false @Noname_11149
+
+:Noname_11162
+{11162} wait 0
+{11166} get_cleo_shared_var 59 {var_result} 31@
+{11173} if 
+{11177}   31@ == 1
+{11184} goto_if_false @Noname_11441
+{11191} if 
+{11195}   not is_char_in_any_car $scplayer
+{11200} goto_if_false @Noname_11441
+{11207} if 
+{11211}   not is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{11217} goto_if_false @Noname_11441
+{11224} if or
+{11228}   is_button_pressed PadId.Pad1 {buttonId} Button.LeftStickX
+{11234}   is_button_pressed PadId.Pad1 {buttonId} Button.LeftStickY
+{11240} goto_if_false @Noname_11441
+{11247} if or
+{11251}   is_current_char_weapon $scplayer {weaponType} WeaponType.Pistol
+{11258}   is_current_char_weapon $scplayer {weaponType} WeaponType.PistolSilenced
+{11265}   is_current_char_weapon $scplayer {weaponType} WeaponType.DesertEagle
+{11272}   is_current_char_weapon $scplayer {weaponType} WeaponType.Sawnoff
+{11279}   is_current_char_weapon $scplayer {weaponType} WeaponType.Spas12
+{11286}   is_current_char_weapon $scplayer {weaponType} WeaponType.MicroUzi
+{11293}   is_current_char_weapon $scplayer {weaponType} WeaponType.Mp5
+{11300}   is_current_char_weapon $scplayer {weaponType} WeaponType.M4
+{11307} goto_if_false @Noname_11441
+{11314} 0@ = get_ped_pointer $scplayer
+{11322} 0@ += 1816
+{11330} 1@ = read_memory 0@ {size} 1 {vp} False
+{11342} 0@ = get_ped_pointer $scplayer
+{11350} 0@ += 1440
+{11358} 1@ *= 28
+{11365} add_int_lvar_to_int_lvar 0@ += 1@
+{11373} 0@ += 8
+{11380} 3@ = read_memory 0@ {size} 1 {vp} False
+{11392} if 
+{11396}   3@ <= 2
+{11403} goto_if_false @Noname_11441
+{11410} 7@ = get_current_char_weapon $scplayer
+{11418} wait 50
+{11422} set_current_char_weapon $scplayer {weaponType} WeaponType.Unarmed
+{11429} wait 50
+{11433} set_current_char_weapon $scplayer {weaponType} 7@
+
+:Noname_11441
+{11441} goto @Noname_11162
+
+:Noname_11448
+{11448} if 
+{11452}   2@ = load_dynamic_library "User32.dll"
+{11469} goto_if_false @Noname_11551
+{11476} if 
+{11480}   2@ = get_dynamic_library_procedure "keybd_event" {self} 2@
+{11501} goto_if_false @Noname_11551
+{11508} call_function 2@ {numArgs} 4 {pop} 0 {args} 0 0 0 0@ 
+{11527} wait 1@
+{11532} call_function 2@ {numArgs} 4 {pop} 0 {args} 0 2 0 0@ 
+
+:Noname_11551
+{11551} cleo_return 0 {retParams} 
+
+:Noname_11556
+{11556} nop 
+
+:Noname_11558
+{11558} wait 0
+{11562}   samp_is_my_player_spawned 
+{11564} goto_if_false @Noname_11558
+{11571} request_model 105
+{11575} load_all_models_now 
+{11577} 3@, 4@, 5@ = get_offset_from_char_in_world_coords $scplayer {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{11606} 25@ = create_char PedType.CivMale {modelId} 105 {x} 3@ {y} 4@ {z} 5@
+{11624} freeze_char_position 25@ {state} True
+{11631} set_char_collision 25@ {state} False
+{11638} set_char_visible 25@ {state} False
+
+:Noname_11645
+{11645} wait 0
+{11649} get_cleo_shared_var 65 {var_result} 0@
+{11656} if 
+{11660}   0@ == 1
+{11667} goto_if_false @Noname_12877
+{11674} get_cleo_shared_var 16 {var_result} 31@
+{11681} if 
+{11685}   31@ == 1
+{11692} goto_if_false @Noname_11724
+
+:Noname_11699
+{11699} wait 0
+{11703} get_cleo_shared_var 16 {var_result} 31@
+{11710}   31@ == 0
+{11717} goto_if_false @Noname_11699
+
+:Noname_11724
+{11724} if 
+{11728} cleo_call @Noname_40961 {numArgs} 0 {args} 31@ 3@ 4@ 5@ 
+{11750} goto_if_false @Noname_11795
+{11757} if 
+{11761}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{11767} goto_if_false @Noname_11781
+{11774} goto @Noname_11788
+
+:Noname_11781
+{11781} 31@ = -1
+
+:Noname_11788
+{11788} goto @Noname_11802
+
+:Noname_11795
+{11795} 31@ = -1
+
+:Noname_11802
+{11802} set_char_coordinates 25@ {x} 0.0 {y} 0.0 {z} 0.0
+{11822} 0@ = 0
+
+:Noname_11829
+{11829} if 
+{11833}   samp_is_remote_player_connected 0@
+{11838} goto_if_false @Noname_12855
+{11845} if 
+{11849} samp_get_player_char_by_id 0@ {number} 1@
+{11857} goto_if_false @Noname_12855
+{11864} get_cleo_shared_var 76 {var_result} 2@
+{11871} if or
+{11875}   2@ == 0
+{11882}   not is_int_lvar_equal_to_int_lvar 1@ == 31@
+{11890} goto_if_false @Noname_12855
+{11897} if and
+{11901}   not is_char_dead 1@
+{11906}   is_char_on_screen 1@
+{11911} goto_if_false @Noname_12855
+{11918} 2@ = get_char_model 1@
+{11926} cleo_call @Noname_22487 {numArgs} 0 {args} 14@ 15@ 
+{11942} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 16@ 17@ 18@ 
+{11964} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} -1.0
+{11993} set_char_coordinates 25@ {x} 3@ {y} 4@ {z} 5@
+{12007} set_char_heading 25@ {heading} 14@
+{12015} if or
+{12019}   is_char_ducking 1@
+{12024}   is_char_in_any_car 1@
+{12029} goto_if_false @Noname_12089
+{12036} 18@ /= 2.0
+{12046} if 
+{12050}   not is_char_in_any_car 1@
+{12055} goto_if_false @Noname_12079
+{12062} 18@ -= 0.4
+{12072} goto @Noname_12089
+
+:Noname_12079
+{12079} 18@ += 0.4
+
+:Noname_12089
+{12089} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 25@ {xOffset} 16@ {yOffset} 0.0 {zOffset} 18@
+{12114}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{12131} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 16@ 17@ 18@ 
+{12153} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} -1.0
+{12182} set_char_coordinates 25@ {x} 3@ {y} 4@ {z} 5@
+{12196} set_char_heading 25@ {heading} 14@
+{12204} if or
+{12208}   is_char_ducking 1@
+{12213}   is_char_in_any_car 1@
+{12218} goto_if_false @Noname_12278
+{12225} 18@ /= 2.0
+{12235} if 
+{12239}   not is_char_in_any_car 1@
+{12244} goto_if_false @Noname_12268
+{12251} 18@ -= 0.4
+{12261} goto @Noname_12278
+
+:Noname_12268
+{12268} 18@ += 0.4
+
+:Noname_12278
+{12278} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 25@ {xOffset} 16@ {yOffset} 0.0 {zOffset} 18@
+{12303}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{12320} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 16@ 17@ 18@ 
+{12342} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} -1.0
+{12371} set_char_coordinates 25@ {x} 3@ {y} 4@ {z} 5@
+{12385} set_char_heading 25@ {heading} 14@
+{12393} if or
+{12397}   is_char_ducking 1@
+{12402}   is_char_in_any_car 1@
+{12407} goto_if_false @Noname_12467
+{12414} 18@ /= 2.0
+{12424} if 
+{12428}   not is_char_in_any_car 1@
+{12433} goto_if_false @Noname_12457
+{12440} 18@ -= 0.4
+{12450} goto @Noname_12467
+
+:Noname_12457
+{12457} 18@ += 0.4
+
+:Noname_12467
+{12467} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 25@ {xOffset} 16@ {yOffset} 0.0 {zOffset} 18@
+{12492}   10@, 11@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{12509} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 16@ 17@ 18@ 
+{12531} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} -1.0
+{12560} set_char_coordinates 25@ {x} 3@ {y} 4@ {z} 5@
+{12574} set_char_heading 25@ {heading} 14@
+{12582} if or
+{12586}   is_char_ducking 1@
+{12591}   is_char_in_any_car 1@
+{12596} goto_if_false @Noname_12656
+{12603} 18@ /= 2.0
+{12613} if 
+{12617}   not is_char_in_any_car 1@
+{12622} goto_if_false @Noname_12646
+{12629} 18@ -= 0.4
+{12639} goto @Noname_12656
+
+:Noname_12646
+{12646} 18@ += 0.4
+
+:Noname_12656
+{12656} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 25@ {xOffset} 16@ {yOffset} 0.0 {zOffset} 18@
+{12681}   12@, 13@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{12698} get_cleo_shared_var 79 {var_result} 31@
+{12705} if 
+{12709}   31@ == 1
+{12716} goto_if_false @Noname_12737
+{12723} get_cleo_shared_var 49 {var_result} 20@
+{12730} goto @Noname_12745
+
+:Noname_12737
+{12737} 20@ = samp_get_player_color 0@
+
+:Noname_12745
+{12745} if 
+{12749} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{12762} goto_if_false @Noname_12779
+{12769} 20@ = -917249
+
+:Noname_12779
+{12779} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 20@
+{12798} sf_d3d_draw_line 8@ {fromCoordY} 9@ {toCoordX} 10@ {toCoordY} 11@ {tickness} 1 {color} 20@
+{12817} sf_d3d_draw_line 10@ {fromCoordY} 11@ {toCoordX} 12@ {toCoordY} 13@ {tickness} 1 {color} 20@
+{12836} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 6@ {toCoordY} 7@ {tickness} 1 {color} 20@
+
+:Noname_12855
+{12855} 0@ += 1
+{12862}   0@ > 1000
+{12870} goto_if_false @Noname_11829
+
+:Noname_12877
+{12877} goto @Noname_11645
+
+:Noname_12884
+{12884} nop 
+
+:Noname_12886
+{12886} wait 0
+{12890} get_cleo_shared_var 66 {var_result} 0@
+{12897} if 
+{12901}   0@ == 1
+{12908} goto_if_false @Noname_14850
+{12915} get_cleo_shared_var 16 {var_result} 31@
+{12922} if 
+{12926}   31@ == 1
+{12933} goto_if_false @Noname_12965
+
+:Noname_12940
+{12940} wait 0
+{12944} get_cleo_shared_var 16 {var_result} 31@
+{12951}   31@ == 0
+{12958} goto_if_false @Noname_12940
+
+:Noname_12965
+{12965} 0@ = 0
+
+:Noname_12972
+{12972} if 
+{12976}   samp_is_remote_player_connected 0@
+{12981} goto_if_false @Noname_14828
+{12988} if 
+{12992} samp_get_player_char_by_id 0@ {number} 1@
+{13000} goto_if_false @Noname_14828
+{13007} if 
+{13011}   is_char_on_screen 1@
+{13016} goto_if_false @Noname_14828
+{13023} 2@ = get_char_model 1@
+{13031} get_cleo_shared_var 79 {var_result} 31@
+{13038} if 
+{13042}   31@ == 1
+{13049} goto_if_false @Noname_13070
+{13056} get_cleo_shared_var 49 {var_result} 10@
+{13063} goto @Noname_13078
+
+:Noname_13070
+{13070} 10@ = samp_get_player_color 0@
+
+:Noname_13078
+{13078} if 
+{13082} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{13095} goto_if_false @Noname_13112
+{13102} 10@ = -917249
+
+:Noname_13112
+{13112} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13134} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13157}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13174} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13196} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13219}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13236} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13255} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13277} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13300}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13317} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13339} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13362}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13379} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13398} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13420} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13443}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13460} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13482} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13505}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13522} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13541} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13563} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13586}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13603} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13625} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13648}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13665} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13684} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13706} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13729}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13746} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13768} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13791}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13808} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13827} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13849} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13872}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13889} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13911} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{13934}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{13951} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{13970} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{13992} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14015}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14032} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14054} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14077}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14094} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{14113} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14135} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14158}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14175} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14197} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14220}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14237} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{14256} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14278} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14301}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14318} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14340} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14363}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14380} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{14399} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14421} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14444}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14461} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14483} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14506}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14523} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{14542} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14564} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14587}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14604} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14626} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14649}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14666} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{14685} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14707} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14730}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14747} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{14769} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{14792}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{14809} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_14828
+{14828} 0@ += 1
+{14835}   0@ > 1000
+{14843} goto_if_false @Noname_12972
+
+:Noname_14850
+{14850} goto @Noname_12886
+{14857} 1@ = 1
+{14864} if 
+{14868}   does_char_exist 0@
+{14873} goto_if_false @Noname_15131
+{14880} 5@, 6@, 7@ = get_active_camera_coordinates 
+{14891} 2@ = 0
+
+:Noname_14898
+{14898} cleo_call @Noname_25340 {numArgs} 2 {args} -15773 2@ 3@ 
+{14917} if 
+{14921}   scan_string 3@ {format} "%d" {var_nValues} TIMERB {var_values} 4@ 
+{14937} goto_if_false @Noname_15110
+{14944} cleo_call @Noname_22388 {numArgs} 2 {args} 0@ 4@ 8@ 9@ 10@ 
+{14969} get_cleo_shared_var 77 {var_result} 31@
+{14976} if 
+{14980}   31@ == 1
+{14987} goto_if_false @Noname_15059
+{14994} if 
+{14998} 11@ = samp_get_player_id 0@
+{15006} goto_if_false @Noname_15059
+{15013} cleo_call @Noname_30626 {numArgs} 1 {args} 0@ 16@ 17@ 18@ 
+{15035} add_float_lvar_to_float_lvar 8@ += 16@
+{15043} add_float_lvar_to_float_lvar 9@ += 17@
+{15051} add_float_lvar_to_float_lvar 10@ += 18@
+
+:Noname_15059
+{15059} if 
+{15063}   is_line_of_sight_clear 8@ {fromY} 9@ {fromZ} 10@ {toX} 5@ {toY} 6@ {toZ} 7@ {buildings} True {cars} True {chars} False {objects} True {particles} False
+{15093} goto_if_false @Noname_15110
+{15100}   is_pc_version 
+{15102} cleo_return 1 {retParams} 4@ 
+
+:Noname_15110
+{15110} 2@ += 1
+{15117}   2@ > 17
+{15124} goto_if_false @Noname_14898
+
+:Noname_15131
+{15131}   is_australian_game 
+{15133} cleo_return 1 {retParams} -1 
+{15140} clear_object_last_weapon_damage "3"
+{15145} clear_object_last_weapon_damage "5"
+{15150} clear_object_last_weapon_damage "6"
+{15155} clear_object_last_weapon_damage "22"
+{15161} clear_object_last_weapon_damage "32"
+{15167} clear_object_last_weapon_damage "23"
+{15173} clear_object_last_weapon_damage "33"
+{15179} clear_object_last_weapon_damage "24"
+{15185} clear_object_last_weapon_damage "34"
+{15191} clear_object_last_weapon_damage "52"
+{15197} clear_object_last_weapon_damage "42"
+{15203} clear_object_last_weapon_damage "53"
+{15209} clear_object_last_weapon_damage "43"
+{15215} clear_object_last_weapon_damage "54"
+{15221} clear_object_last_weapon_damage "44"
+{15227} nop 
+
+:Noname_15229
+{15229} nop 
+
+:Noname_15231
+{15231} wait 0
+{15235}   samp_is_available 
+{15237} goto_if_false @Noname_15231
+
+:Noname_15244
+{15244} wait 0
+{15248} get_cleo_shared_var 18 {var_result} 31@
+{15255} if 
+{15259}   31@ == 1337
+{15267} goto_if_false @Noname_15281
+{15274} goto @Noname_15288
+
+:Noname_15281
+{15281} goto @Noname_15244
+
+:Noname_15288
+{15288} wait 0
+{15292} get_cleo_shared_var 63 {var_result} 31@
+{15299} if 
+{15303}   31@ == 1
+{15310} goto_if_false @Noname_15803
+{15317} get_cleo_shared_var 16 {var_result} 31@
+{15324} if 
+{15328}   31@ == 1
+{15335} goto_if_false @Noname_15367
+
+:Noname_15342
+{15342} wait 0
+{15346} get_cleo_shared_var 16 {var_result} 31@
+{15353}   31@ == 0
+{15360} goto_if_false @Noname_15342
+
+:Noname_15367
+{15367} 5@, 6@ = sf_get_screen_resolution 
+{15375} 6@ = 0
+{15382} 5@ /= 2
+{15389} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{15410} 0@ = 0
+
+:Noname_15417
+{15417} if 
+{15421}   samp_is_remote_player_connected 0@
+{15426} goto_if_false @Noname_15781
+{15433} if 
+{15437} samp_get_player_char_by_id 0@ {number} 1@
+{15445} goto_if_false @Noname_15781
+{15452} get_cleo_shared_var 79 {var_result} 31@
+{15459} if 
+{15463}   31@ == 1
+{15470} goto_if_false @Noname_15491
+{15477} get_cleo_shared_var 49 {var_result} 2@
+{15484} goto @Noname_15499
+
+:Noname_15491
+{15491} 2@ = samp_get_player_color 0@
+
+:Noname_15499
+{15499} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 6 7@ 8@ 9@ 
+{15523} 9@ += 0.25
+{15533}   7@, 8@ = sf_world_coords_to_window_screen_coords 7@ {worldCoordY} 8@ {worldCoordZ} 9@
+{15550} if 
+{15554}   is_char_on_screen 1@
+{15559} goto_if_false @Noname_15781
+{15566} if 
+{15570} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{15583} goto_if_false @Noname_15690
+{15590} 12@ = 2
+{15597} 5@, 6@ = sf_get_screen_resolution 
+{15605} 6@ = 0
+{15612} 5@ /= 2
+{15619} sf_d3d_draw_line 5@ {fromCoordY} 6@ {toCoordX} 7@ {toCoordY} 8@ {tickness} 12@ {color} -917249
+{15641} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{15662} sf_d3d_draw_polygon 7@ {coordY} 8@ {width} 4 {height} 4 {cornerCount} 10 {heading} 0 {color} -16777216
+{15683} goto @Noname_15781
+
+:Noname_15690
+{15690} 12@ = 1
+{15697} 5@, 6@ = sf_get_screen_resolution 
+{15705} 6@ = 0
+{15712} 5@ /= 2
+{15719} sf_d3d_draw_line 5@ {fromCoordY} 6@ {toCoordX} 7@ {toCoordY} 8@ {tickness} 12@ {color} 2@
+{15739} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{15760} sf_d3d_draw_polygon 7@ {coordY} 8@ {width} 4 {height} 4 {cornerCount} 10 {heading} 0 {color} -16777216
+
+:Noname_15781
+{15781} 0@ += 1
+{15788}   0@ > 1000
+{15796} goto_if_false @Noname_15417
+
+:Noname_15803
+{15803} goto @Noname_15288
+
+:Noname_15810
+{15810} if 
+{15814}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 50
+{15821} goto_if_false @Noname_15878
+{15828}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbot"
+{15871} goto @Noname_15921
+
+:Noname_15878
+{15878}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbot"
+
+:Noname_15921
+{15921} if 
+{15925}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 51
+{15932} goto_if_false @Noname_15989
+{15939}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Triggerbot"
+{15982} goto @Noname_16032
+
+:Noname_15989
+{15989}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Triggerbot"
+
+:Noname_16032
+{16032} if 
+{16036}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 52
+{16043} goto_if_false @Noname_16099
+{16050}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AimAssist"
+{16092} goto @Noname_16141
+
+:Noname_16099
+{16099}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AimAssist"
+
+:Noname_16141
+{16141} if 
+{16145}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 53
+{16152} goto_if_false @Noname_16208
+{16159}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "SilentAim"
+{16201} goto @Noname_16250
+
+:Noname_16208
+{16208}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "SilentAim"
+
+:Noname_16250
+{16250} if 
+{16254}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 57
+{16261} goto_if_false @Noname_16318
+{16268}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Laufscript"
+{16311} goto @Noname_16361
+
+:Noname_16318
+{16318}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Laufscript"
+
+:Noname_16361
+{16361} if 
+{16365}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 54
+{16372} goto_if_false @Noname_16427
+{16379}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noSpread"
+{16420} goto @Noname_16468
+
+:Noname_16427
+{16427}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noSpread"
+
+:Noname_16468
+{16468} if 
+{16472}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 55
+{16479} goto_if_false @Noname_16535
+{16486}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noRelAmmo"
+{16528} goto @Noname_16577
+
+:Noname_16535
+{16535}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noRelAmmo"
+
+:Noname_16577
+{16577} if 
+{16581}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 56
+{16588} goto_if_false @Noname_16641
+{16595}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noStun"
+{16634} goto @Noname_16680
+
+:Noname_16641
+{16641}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "noStun"
+
+:Noname_16680
+{16680} if 
+{16684}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 58
+{16691} goto_if_false @Noname_16748
+{16698}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CBugHelper"
+{16741} goto @Noname_16791
+
+:Noname_16748
+{16748}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CBugHelper"
+
+:Noname_16791
+{16791} if 
+{16795}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 59
+{16802} goto_if_false @Noname_16859
+{16809}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AutoScroll"
+{16852} goto @Noname_16902
+
+:Noname_16859
+{16859}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "AutoScroll"
+
+:Noname_16902
+{16902} if 
+{16906}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 60
+{16913} goto_if_false @Noname_16969
+{16920}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FlickShot"
+{16962} goto @Noname_17011
+
+:Noname_16969
+{16969}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FlickShot"
+
+:Noname_17011
+{17011} if 
+{17015}   sf_dxut_dialog_is_checkbox_checked 1@ {checkboxId} 61
+{17022} goto_if_false @Noname_17081
+{17029}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DistanceHack"
+{17074} goto @Noname_17126
+
+:Noname_17081
+{17081}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DistanceHack"
+
+:Noname_17126
+{17126} if 
+{17130}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 62
+{17137} goto_if_false @Noname_17192
+{17144}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "NameTags"
+{17185} goto @Noname_17233
+
+:Noname_17192
+{17192}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "NameTags"
+
+:Noname_17233
+{17233} if 
+{17237}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 63
+{17244} goto_if_false @Noname_17300
+{17251}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersUP"
+{17293} goto @Noname_17342
+
+:Noname_17300
+{17300}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersUP"
+
+:Noname_17342
+{17342} if 
+{17346}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 64
+{17353} goto_if_false @Noname_17411
+{17360}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersDown"
+{17404} goto @Noname_17455
+
+:Noname_17411
+{17411}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "TracersDown"
+
+:Noname_17455
+{17455} if 
+{17459}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 65
+{17466} goto_if_false @Noname_17520
+{17473}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "2DBoxes"
+{17513} goto @Noname_17560
+
+:Noname_17520
+{17520}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "2DBoxes"
+
+:Noname_17560
+{17560} if 
+{17564}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 66
+{17571} goto_if_false @Noname_17625
+{17578}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "3DBoxes"
+{17618} goto @Noname_17665
+
+:Noname_17625
+{17625}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "3DBoxes"
+
+:Noname_17665
+{17665} if 
+{17669}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 69
+{17676} goto_if_false @Noname_17728
+{17683}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Bones"
+{17721} goto @Noname_17766
+
+:Noname_17728
+{17728}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Bones"
+
+:Noname_17766
+{17766} if 
+{17770}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 70
+{17777} goto_if_false @Noname_17832
+{17784}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Position"
+{17825} goto @Noname_17873
+
+:Noname_17832
+{17832}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "Position"
+
+:Noname_17873
+{17873} if 
+{17877}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 67
+{17884} goto_if_false @Noname_17943
+{17891}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VisualHitbox"
+{17936} goto @Noname_17988
+
+:Noname_17943
+{17943}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VisualHitbox"
+
+:Noname_17988
+{17988} if 
+{17992}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 74
+{17999} goto_if_false @Noname_18057
+{18006}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+{18050} goto @Noname_18101
+
+:Noname_18057
+{18057}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+
+:Noname_18101
+{18101} if 
+{18105}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 74
+{18112} goto_if_false @Noname_18170
+{18119}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+{18163} goto @Noname_18214
+
+:Noname_18170
+{18170}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "GlowFriends"
+
+:Noname_18214
+{18214} if 
+{18218}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 73
+{18225} goto_if_false @Noname_18283
+{18232}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DarkEnemies"
+{18276} goto @Noname_18327
+
+:Noname_18283
+{18283}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "DarkEnemies"
+
+:Noname_18327
+{18327} if 
+{18331}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 72
+{18338} goto_if_false @Noname_18397
+{18345}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LineToTarget"
+{18390} goto @Noname_18442
+
+:Noname_18397
+{18397}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LineToTarget"
+
+:Noname_18442
+{18442} if 
+{18446}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 76
+{18453} goto_if_false @Noname_18509
+{18460}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "BoxTarget"
+{18502} goto @Noname_18551
+
+:Noname_18509
+{18509}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "BoxTarget"
+
+:Noname_18551
+{18551} if 
+{18555}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 68
+{18562} goto_if_false @Noname_18623
+{18569}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CustomNameTags"
+{18616} goto @Noname_18670
+
+:Noname_18623
+{18623}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "CustomNameTags"
+
+:Noname_18670
+{18670} if 
+{18674}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 71
+{18681} goto_if_false @Noname_18738
+{18688}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VehicleESP"
+{18731} goto @Noname_18781
+
+:Noname_18738
+{18738}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "VehicleESP"
+
+:Noname_18781
+{18781} if 
+{18785}   sf_dxut_dialog_is_checkbox_checked 2@ {checkboxId} 75
+{18792} goto_if_false @Noname_18845
+{18799}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FarESP"
+{18838} goto @Noname_18884
+
+:Noname_18845
+{18845}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FarESP"
+
+:Noname_18884
+{18884} if 
+{18888}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 80
+{18895} goto_if_false @Noname_18953
+{18902}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbotX"
+{18946} goto @Noname_18997
+
+:Noname_18953
+{18953}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimbotX"
+
+:Noname_18997
+{18997} if 
+{19001}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 81
+{19008} goto_if_false @Noname_19069
+{19015}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimOnShoot"
+{19062} goto @Noname_19116
+
+:Noname_19069
+{19069}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FastAimOnShoot"
+
+:Noname_19116
+{19116} if 
+{19120}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 78
+{19127} goto_if_false @Noname_19185
+{19134}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FriendsMode"
+{19178} goto @Noname_19229
+
+:Noname_19185
+{19185}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "FriendsMode"
+
+:Noname_19229
+{19229} if 
+{19233}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 79
+{19240} goto_if_false @Noname_19298
+{19247}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "RainBowMode"
+{19291} goto @Noname_19342
+
+:Noname_19298
+{19298}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "RainBowMode"
+
+:Noname_19342
+{19342} if 
+{19346}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 77
+{19353} goto_if_false @Noname_19412
+{19360}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LagShotCalc."
+{19405} goto @Noname_19457
+
+:Noname_19412
+{19412}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "LagShotCalc."
+
+:Noname_19457
+{19457} if 
+{19461}   sf_dxut_dialog_is_checkbox_checked 3@ {checkboxId} 82
+{19468} goto_if_false @Noname_19530
+{19475}   write_int_to_ini_file 1 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "IgnoreSameColor"
+{19523} goto @Noname_19578
+
+:Noname_19530
+{19530}   write_int_to_ini_file 0 {path} "CLEO\OP-HaX.ini" {section} "Settings" {key} "IgnoreSameColor"
+
+:Noname_19578
+{19578} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 5
+{19588}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "Prediction"
+{19630} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 8
+{19640}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "AimAssistSpeed"
+{19686} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 11
+{19696}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "FieldOfView"
+{19739} 31@ = sf_dxut_dialog_get_slider_value 3@ {id} 14
+{19749}   write_int_to_ini_file 31@ {path} "CLEO\OP-HaX.ini" {section} "Values" {key} "FastAimbotSmooth"
+{19797} return 
+
+:Noname_19799
+{19799} nop 
+
+:Noname_19801
+{19801} wait 0
+{19805}   samp_is_available 
+{19807} goto_if_false @Noname_19801
+
+:Noname_19814
+{19814} wait 0
+{19818} get_cleo_shared_var 18 {var_result} 31@
+{19825} if 
+{19829}   31@ == 1337
+{19837} goto_if_false @Noname_19851
+{19844} goto @Noname_19858
+
+:Noname_19851
+{19851} goto @Noname_19814
+
+:Noname_19858
+{19858} wait 0
+{19862} get_cleo_shared_var 50 {var_result} 31@
+{19869} if 
+{19873}   31@ == 1
+{19880} goto_if_false @Noname_20670
+{19887} get_cleo_shared_var 81 {var_result} 31@
+{19894} if 
+{19898}   31@ == 1
+{19905} goto_if_false @Noname_19962
+{19912} if or
+{19916}   is_button_pressed PadId.Pad1 {buttonId} Button.Circle
+{19922}   is_char_shooting $scplayer
+{19927} goto_if_false @Noname_19948
+{19934} 30@ = 1
+{19941} goto @Noname_19955
+
+:Noname_19948
+{19948} 30@ = 0
+
+:Noname_19955
+{19955} goto @Noname_19969
+
+:Noname_19962
+{19962} 30@ = 1
+
+:Noname_19969
+{19969} if and
+{19973}   30@ == 1
+{19980}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{19986} goto_if_false @Noname_20670
+{19993} if 
+{19997} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{20007} goto_if_false @Noname_20670
+{20014} if 
+{20018} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 6@ 7@ 8@ 
+{20040} goto_if_false @Noname_20670
+{20047} 9@, 10@, 11@ = get_active_camera_coordinates 
+{20058} cleo_call @Noname_20812 {numArgs} 6 {args} 6@ 7@ 8@ 9@ 10@ 11@ 12@ 
+{20089} cleo_call @Noname_20856 {numArgs} 4 {args} 6@ 7@ 9@ 10@ 13@ 
+{20114} 12@ -= 270.0
+{20124} 13@ -= 90.0
+{20134} 12@ = sf_degrees_to_radians 12@
+{20142} 13@ = sf_degrees_to_radians 13@
+{20150} 14@ = get_current_char_weapon $scplayer
+{20158} if and
+{20162}   14@ >= 22
+{20169}   14@ <= 29
+{20176} goto_if_false @Noname_20203
+{20183} 12@ -= 0.0778
+{20193} 13@ += 0.0425
+
+:Noname_20203
+{20203} if 
+{20207}   14@ == 32
+{20214} goto_if_false @Noname_20241
+{20221} 12@ -= 0.0778
+{20231} 13@ += 0.0425
+
+:Noname_20241
+{20241} if and
+{20245}   14@ >= 30
+{20252}   14@ <= 31
+{20259} goto_if_false @Noname_20286
+{20266} 12@ -= 0.052
+{20276} 13@ += 0.028
+
+:Noname_20286
+{20286} if 
+{20290}   14@ == 33
+{20297} goto_if_false @Noname_20324
+{20304} 12@ -= 0.0357
+{20314} 13@ += 0.019
+
+:Noname_20324
+{20324} get_cleo_shared_var 13 {var_result} 14@
+{20331} if 
+{20335}   14@ > 0.0
+{20345} goto_if_false @Noname_20500
+{20352} 15@ = read_memory 11989592 {size} 4 {vp} False
+{20366} 16@ = read_memory 11989576 {size} 4 {vp} False
+{20380} sub_float_lvar_from_float_lvar 13@ -= 15@
+{20388} sub_float_lvar_from_float_lvar 12@ -= 16@
+{20396} cleo_call @Noname_20677 {numArgs} 2 {args} 13@ 12@ 13@ 12@ 
+{20418} div_float_lvar_by_float_lvar 13@ /= 14@
+{20426} div_float_lvar_by_float_lvar 12@ /= 14@
+{20434} 17@ = read_memory 11989592 {size} 4 {vp} False
+{20448} 18@ = read_memory 11989576 {size} 4 {vp} False
+{20462} add_float_lvar_to_float_lvar 13@ += 17@
+{20470} add_float_lvar_to_float_lvar 12@ += 18@
+{20478} cleo_call @Noname_20677 {numArgs} 2 {args} 13@ 12@ 13@ 12@ 
+
+:Noname_20500
+{20500} 15@ = read_memory 11989592 {size} 4 {vp} False
+{20514} 16@ = read_memory 11989576 {size} 4 {vp} False
+{20528} sub_float_lvar_from_float_lvar 15@ -= 13@
+{20536} sub_float_lvar_from_float_lvar 16@ -= 12@
+{20544} cleo_call @Noname_20677 {numArgs} 2 {args} 15@ 16@ 15@ 16@ 
+{20566} if and
+{20570}   15@ < 0.3
+{20580}   15@ > -0.3
+{20590}   16@ < 0.3
+{20600}   16@ > -0.3
+{20610} goto_if_false @Noname_20670
+{20617} write_memory 11989592 {size} 4 {value} 13@ {vp} False
+{20631} get_cleo_shared_var 80 {var_result} 31@
+{20638} if 
+{20642}   31@ == 1
+{20649} goto_if_false @Noname_20670
+{20656} write_memory 11989576 {size} 4 {value} 12@ {vp} False
+
+:Noname_20670
+{20670} goto @Noname_19858
+
+:Noname_20677
+{20677} if 
+{20681}   0@ > 3.1416
+{20691} goto_if_false @Noname_20708
+{20698} 0@ -= 6.2832
+
+:Noname_20708
+{20708} if 
+{20712}   0@ < -3.1416
+{20722} goto_if_false @Noname_20739
+{20729} 0@ += 6.2832
+
+:Noname_20739
+{20739} if 
+{20743}   1@ > 3.1416
+{20753} goto_if_false @Noname_20770
+{20760} 1@ -= 6.2832
+
+:Noname_20770
+{20770} if 
+{20774}   1@ < -3.1416
+{20784} goto_if_false @Noname_20801
+{20791} 1@ += 6.2832
+
+:Noname_20801
+{20801} cleo_return 2 {retParams} 0@ 1@ 
+
+:Noname_20812
+{20812} 6@ = get_distance_between_coords_2d 0@ {fromY} 1@ {toX} 3@ {toZ} 4@
+{20829} sub_float_lvar_from_float_lvar 2@ -= 5@
+{20837} 7@ = get_heading_from_vector_2d 6@ {y} 2@
+{20848} cleo_return 1 {retParams} 7@ 
+
+:Noname_20856
+{20856} sub_float_lvar_from_float_lvar 0@ -= 2@
+{20864} sub_float_lvar_from_float_lvar 1@ -= 3@
+{20872} 4@ = get_heading_from_vector_2d 0@ {y} 1@
+{20883} cleo_return 1 {retParams} 4@ 
+
+:Noname_20891
+{20891} nop 
+
+:Noname_20893
+{20893} wait 0
+{20897}   samp_is_available 
+{20899} goto_if_false @Noname_20893
+
+:Noname_20906
+{20906} wait 0
+{20910} get_cleo_shared_var 62 {var_result} 31@
+{20917} if 
+{20921}   31@ == 1
+{20928} goto_if_false @Noname_21062
+{20935} cleo_call @Noname_22009 {numArgs} 0 {args} 
+
+:Noname_20945
+{20945} wait 0
+{20949} get_cleo_shared_var 16 {var_result} 31@
+{20956} if 
+{20960}   31@ == 1
+{20967} goto_if_false @Noname_20981
+{20974} goto @Noname_21002
+
+:Noname_20981
+{20981} get_cleo_shared_var 62 {var_result} 31@
+{20988}   31@ == 0
+{20995} goto_if_false @Noname_20945
+
+:Noname_21002
+{21002} cleo_call @Noname_22169 {numArgs} 0 {args} 
+{21012} get_cleo_shared_var 16 {var_result} 30@
+{21019} if 
+{21023}   30@ == 1
+{21030} goto_if_false @Noname_21062
+
+:Noname_21037
+{21037} wait 0
+{21041} get_cleo_shared_var 16 {var_result} 30@
+{21048}   30@ == 0
+{21055} goto_if_false @Noname_21037
+
+:Noname_21062
+{21062} goto @Noname_20906
+
+:Noname_21069
+{21069} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21092} 2@ *= -1.0
+{21102} cleo_return 3 {retParams} 1@ 2@ 3@ 
+
+:Noname_21116
+{21116} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21139} 1@ *= -1.0
+{21149} cleo_return 3 {retParams} 1@ 2@ 3@ 
+
+:Noname_21163
+{21163} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21186} 1@ *= -1.0
+{21196} 2@ *= -1.0
+{21206} cleo_return 3 {retParams} 1@ 2@ 3@ 
+
+:Noname_21220
+{21220} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21243} cleo_return 3 {retParams} 1@ 2@ 3@ 
+
+:Noname_21257
+{21257} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21280} 4@ *= -1.0
+{21290} cleo_return 3 {retParams} 4@ 5@ 6@ 
+
+:Noname_21304
+{21304} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21327} 5@ *= -1.0
+{21337} cleo_return 3 {retParams} 4@ 5@ 6@ 
+
+:Noname_21351
+{21351} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21374} 4@ *= -1.0
+{21384} 5@ *= -1.0
+{21394} cleo_return 3 {retParams} 4@ 5@ 6@ 
+
+:Noname_21408
+{21408} 1@, 2@, 3@, 4@, 5@, 6@ = get_model_dimensions 0@
+{21431} cleo_return 3 {retParams} 4@ 5@ 6@ 
+
+:Noname_21445
+{21445} nop 
+
+:Noname_21447
+{21447} wait 0
+{21451}   samp_is_available 
+{21453} goto_if_false @Noname_21447
+
+:Noname_21460
+{21460} wait 0
+{21464} get_cleo_shared_var 18 {var_result} 31@
+{21471} if 
+{21475}   31@ == 1337
+{21483} goto_if_false @Noname_21497
+{21490} goto @Noname_21504
+
+:Noname_21497
+{21497} goto @Noname_21460
+
+:Noname_21504
+{21504} wait 0
+{21508} if 
+{21512} get_cleo_shared_var 64 {var_result} 31@
+{21519} if 
+{21523}   31@ == 1
+{21530} goto_if_false @Noname_22002
+{21537} get_cleo_shared_var 16 {var_result} 31@
+{21544} if 
+{21548}   31@ == 1
+{21555} goto_if_false @Noname_21587
+
+:Noname_21562
+{21562} wait 0
+{21566} get_cleo_shared_var 16 {var_result} 31@
+{21573}   31@ == 0
+{21580} goto_if_false @Noname_21562
+
+:Noname_21587
+{21587} 5@, 6@ = sf_get_screen_resolution 
+{21595} 5@ /= 2
+{21602} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{21623} 0@ = 0
+
+:Noname_21630
+{21630} if 
+{21634}   samp_is_remote_player_connected 0@
+{21639} goto_if_false @Noname_21980
+{21646} if 
+{21650} samp_get_player_char_by_id 0@ {number} 1@
+{21658} goto_if_false @Noname_21980
+{21665} get_cleo_shared_var 79 {var_result} 31@
+{21672} if 
+{21676}   31@ == 1
+{21683} goto_if_false @Noname_21704
+{21690} get_cleo_shared_var 49 {var_result} 2@
+{21697} goto @Noname_21712
+
+:Noname_21704
+{21704} 2@ = samp_get_player_color 0@
+
+:Noname_21712
+{21712} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 1 7@ 8@ 9@ 
+{21736} 9@ -= 0.9
+{21746}   7@, 8@ = sf_world_coords_to_window_screen_coords 7@ {worldCoordY} 8@ {worldCoordZ} 9@
+{21763} if 
+{21767}   is_char_on_screen 1@
+{21772} goto_if_false @Noname_21980
+{21779} if 
+{21783} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{21796} goto_if_false @Noname_21896
+{21803} 12@ = 2
+{21810} 5@, 6@ = sf_get_screen_resolution 
+{21818} 5@ /= 2
+{21825} sf_d3d_draw_line 5@ {fromCoordY} 6@ {toCoordX} 7@ {toCoordY} 8@ {tickness} 12@ {color} -917249
+{21847} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{21868} sf_d3d_draw_polygon 7@ {coordY} 8@ {width} 3 {height} 3 {cornerCount} 10 {heading} 0 {color} -16777216
+{21889} goto @Noname_21980
+
+:Noname_21896
+{21896} 12@ = 1
+{21903} 5@, 6@ = sf_get_screen_resolution 
+{21911} 5@ /= 2
+{21918} sf_d3d_draw_line 5@ {fromCoordY} 6@ {toCoordX} 7@ {toCoordY} 8@ {tickness} 12@ {color} 2@
+{21938} sf_d3d_draw_polygon 5@ {coordY} 6@ {width} 20 {height} 20 {cornerCount} 10 {heading} 0 {color} -16777216
+{21959} sf_d3d_draw_polygon 7@ {coordY} 8@ {width} 3 {height} 3 {cornerCount} 10 {heading} 0 {color} -16777216
+
+:Noname_21980
+{21980} 0@ += 1
+{21987}   0@ > 1000
+{21995} goto_if_false @Noname_21630
+
+:Noname_22002
+{22002} goto @Noname_21504
+
+:Noname_22009
+{22009}   30@ = load_dynamic_library "samp.dll"
+{22024} int_add 1@ = 30@ + 457971
+{22037} write_memory 1@ {size} 6 {value} -1869574000 {vp} True
+{22051} int_add 2@ = 30@ + 458004
+{22064} write_memory 2@ {size} 6 {value} -1869574000 {vp} True
+{22078} int_add 3@ = 30@ + 458280
+{22091} write_memory 3@ {size} 2 {value} 37008 {vp} True
+{22105} int_add 4@ = 30@ + 462648
+{22118} write_memory 4@ {size} 2 {value} 37008 {vp} True
+{22132} int_add 5@ = 30@ + 462372
+{22145} write_memory 5@ {size} 6 {value} -1869574000 {vp} True
+{22159} free_dynamic_library 30@
+{22164} cleo_return 0 {retParams} 
+
+:Noname_22169
+{22169}   30@ = load_dynamic_library "samp.dll"
+{22184} int_add 1@ = 30@ + 457971
+{22197} write_memory 1@ {size} 4 {value} 24216591 {vp} True
+{22211} int_add 2@ = 1@ + 4
+{22221} write_memory 2@ {size} 2 {value} 0 {vp} True
+{22232} int_add 3@ = 30@ + 458004
+{22245} write_memory 3@ {size} 4 {value} 22053903 {vp} True
+{22259} int_add 4@ = 3@ + 4
+{22269} write_memory 4@ {size} 2 {value} 0 {vp} True
+{22280} int_add 5@ = 30@ + 458280
+{22293} write_memory 5@ {size} 2 {value} 16500 {vp} True
+{22305} int_add 6@ = 30@ + 462648
+{22318} write_memory 6@ {size} 2 {value} 24948 {vp} True
+{22330} int_add 7@ = 30@ + 462372
+{22343} write_memory 7@ {size} 4 {value} 24218127 {vp} True
+{22357} int_add 8@ = 7@ + 4
+{22367} write_memory 8@ {size} 2 {value} 0 {vp} True
+{22378} free_dynamic_library 30@
+{22383} cleo_return 0 {retParams} 
+
+:Noname_22388
+{22388} set_lvar_int_to_lvar_int 10@ = 0@
+{22396} set_lvar_int_to_lvar_int 15@ = 1@
+{22404} 1@ = 0.0
+{22414} 2@ = 0.0
+{22424} 3@ = 0.0
+{22434} 0@ = get_ped_pointer 10@
+{22442} 4@ = get_var_pointer 1@
+{22450} call_method 6160832 {struct} 0@ {numArgs} 3 {pop} 0 {args} 1 15@ 4@ 
+{22473} cleo_return 3 {retParams} 1@ 2@ 3@ 
+
+:Noname_22487
+{22487} 1@, 2@, 3@ = get_char_coordinates $scplayer
+{22501} call_method 5327216 {struct} 11989032 {numArgs} 6 {pop} 0 {args} 10787220 10787232 3@ 2@ 1@ 20.0 
+{22542} cleo_call @Noname_22619 {numArgs} 6 {args} $controlmode $mission_trigger_wait_time $flag_cell_nation 1@ 2@ 3@ 5@ 
+{22573} cleo_call @Noname_22663 {numArgs} 4 {args} $controlmode $mission_trigger_wait_time 1@ 2@ 4@ 
+{22598} 5@ += 90.0
+{22608} cleo_return 2 {retParams} 4@ 5@ 
+
+:Noname_22619
+{22619} 6@ = get_distance_between_coords_2d 0@ {fromY} 1@ {toX} 3@ {toZ} 4@
+{22636} sub_float_lvar_from_float_lvar 2@ -= 5@
+{22644} 7@ = get_heading_from_vector_2d 6@ {y} 2@
+{22655} cleo_return 1 {retParams} 7@ 
+
+:Noname_22663
+{22663} sub_float_lvar_from_float_lvar 0@ -= 2@
+{22671} sub_float_lvar_from_float_lvar 1@ -= 3@
+{22679} 4@ = get_heading_from_vector_2d 0@ {y} 1@
+{22690} cleo_return 1 {retParams} 4@ 
+{22698} nop 
+
+:Noname_22700
+{22700} wait 0
+{22704} get_cleo_shared_var 48 {var_result} 0@
+{22711} if 
+{22715}   0@ == 1
+{22722} goto_if_false @Noname_22822
+{22729} TIMERB = 0
+{22736} set_cleo_shared_var 48 {value} 0
+
+:Noname_22742
+{22742} wait 0
+{22746} get_cleo_shared_var 10 {var_result} 29@
+{22753} cset_lvar_int_to_lvar_float 29@ =# 29@
+{22761} 29@ *= 2
+{22768} cleo_call @Noname_30991 {numArgs} 0 {args} 1@ 2@ 
+{22784} sf_d3d_draw_polygon 1@ {coordY} 2@ {width} 29@ {height} 29@ {cornerCount} 100 {heading} 0 {color} 1677721600
+{22807}   TIMERB >= 2600
+{22815} goto_if_false @Noname_22742
+
+:Noname_22822
+{22822} goto @Noname_22700
+
+:Noname_22829
+{22829} nop 
+
+:Noname_22831
+{22831} wait 0
+{22835} get_cleo_shared_var 18 {var_result} 31@
+{22842} if 
+{22846}   31@ == 1337
+{22854} goto_if_false @Noname_22868
+{22861} goto @Noname_22875
+
+:Noname_22868
+{22868} goto @Noname_22831
+
+:Noname_22875
+{22875} wait 0
+{22879} get_cleo_shared_var 69 {var_result} 0@
+{22886} if 
+{22890}   0@ == 1
+{22897} goto_if_false @Noname_25236
+{22904} get_cleo_shared_var 16 {var_result} 31@
+{22911} if 
+{22915}   31@ == 1
+{22922} goto_if_false @Noname_22954
+
+:Noname_22929
+{22929} wait 0
+{22933} get_cleo_shared_var 16 {var_result} 31@
+{22940}   31@ == 0
+{22947} goto_if_false @Noname_22929
+
+:Noname_22954
+{22954} 0@ = 0
+
+:Noname_22961
+{22961} if 
+{22965}   samp_is_remote_player_connected 0@
+{22970} goto_if_false @Noname_25214
+{22977} if 
+{22981} samp_get_player_char_by_id 0@ {number} 1@
+{22989} goto_if_false @Noname_25214
+{22996} if 
+{23000}   is_char_on_screen 1@
+{23005} goto_if_false @Noname_25214
+{23012} get_cleo_shared_var 79 {var_result} 31@
+{23019} if 
+{23023}   31@ == 1
+{23030} goto_if_false @Noname_23051
+{23037} get_cleo_shared_var 49 {var_result} 16@
+{23044} goto @Noname_23059
+
+:Noname_23051
+{23051} 16@ = samp_get_player_color 0@
+
+:Noname_23059
+{23059} if 
+{23063} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{23076} goto_if_false @Noname_23093
+{23083} 16@ = -917249
+
+:Noname_23093
+{23093} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 6 6@ 7@ 8@ 
+{23117} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 4 9@ 10@ 11@ 
+{23141}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23158}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23175} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23194} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 4 6@ 7@ 8@ 
+{23218} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 3 9@ 10@ 11@ 
+{23242}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23259}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23276} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23295} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 3 6@ 7@ 8@ 
+{23319} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 2 9@ 10@ 11@ 
+{23343}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23360}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23377} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23396} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 2 6@ 7@ 8@ 
+{23420} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 1 9@ 10@ 11@ 
+{23444}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23461}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23478} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23497} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 1 6@ 7@ 8@ 
+{23521} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 51 9@ 10@ 11@ 
+{23545}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23562}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23579} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23598} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 51 6@ 7@ 8@ 
+{23622} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 52 9@ 10@ 11@ 
+{23646}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23663}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23680} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23699} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 52 6@ 7@ 8@ 
+{23723} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 53 9@ 10@ 11@ 
+{23747}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23764}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23781} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23800} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 53 6@ 7@ 8@ 
+{23824} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 54 9@ 10@ 11@ 
+{23848}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23865}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23882} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{23901} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 1 6@ 7@ 8@ 
+{23925} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 41 9@ 10@ 11@ 
+{23949}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{23966}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{23983} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24002} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 41 6@ 7@ 8@ 
+{24026} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 42 9@ 10@ 11@ 
+{24050}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24067}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24084} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24103} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 42 6@ 7@ 8@ 
+{24127} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 43 9@ 10@ 11@ 
+{24151}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24168}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24185} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24204} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 43 6@ 7@ 8@ 
+{24228} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 44 9@ 10@ 11@ 
+{24252}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24269}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24286} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24305} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 21 6@ 7@ 8@ 
+{24329} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 22 9@ 10@ 11@ 
+{24353}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24370}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24387} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24406} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 22 6@ 7@ 8@ 
+{24430} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 23 9@ 10@ 11@ 
+{24454}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24471}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24488} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24507} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 23 6@ 7@ 8@ 
+{24531} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 24 9@ 10@ 11@ 
+{24555}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24572}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24589} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24608} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 24 6@ 7@ 8@ 
+{24632} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 26 9@ 10@ 11@ 
+{24656}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24673}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24690} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24709} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 31 6@ 7@ 8@ 
+{24733} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 32 9@ 10@ 11@ 
+{24757}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24774}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24791} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24810} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 32 6@ 7@ 8@ 
+{24834} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 33 9@ 10@ 11@ 
+{24858}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24875}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24892} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{24911} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 33 6@ 7@ 8@ 
+{24935} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 34 9@ 10@ 11@ 
+{24959}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{24976}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{24993} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{25012} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 34 6@ 7@ 8@ 
+{25036} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 36 9@ 10@ 11@ 
+{25060}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{25077}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{25094} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 1 {color} 16@
+{25113} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 6 6@ 7@ 8@ 
+{25137} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 5 9@ 10@ 11@ 
+{25161}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{25178}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{25195} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 3 {color} 16@
+
+:Noname_25214
+{25214} 0@ += 1
+{25221}   0@ > 1000
+{25229} goto_if_false @Noname_22961
+
+:Noname_25236
+{25236} goto @Noname_22875
+
+:Noname_25243
+{25243} sf_start_new_script_from_label @Noname_28658 {var_newScriptPtrTo} 30@
+{25254} sf_start_new_script_from_label @Noname_28000 {var_newScriptPtrTo} 30@
+{25265} sf_start_new_script_from_label @Noname_32848 {var_newScriptPtrTo} 30@
+{25276} sf_start_new_script_from_label @Noname_33107 {var_newScriptPtrTo} 30@
+{25287} sf_start_new_script_from_label @Noname_25453 {var_newScriptPtrTo} 30@
+{25298} sf_start_new_script_from_label @Noname_34119 {var_newScriptPtrTo} 30@
+{25309} sf_start_new_script_from_label @Noname_19799 {var_newScriptPtrTo} 30@
+{25320} sf_start_new_script_from_label @Noname_38927 {var_newScriptPtrTo} 30@
+{25331} set_cleo_shared_var 23 {value} 6969
+{25338} return 
+
+:Noname_25340
+{25340} 0@ = get_label_pointer 0@
+{25348} 0@ += 4
+{25355} 2@ = 0
+
+:Noname_25362
+{25362}   not is_int_lvar_greater_or_equal_to_int_lvar 2@ >= 1@
+{25370} goto_if_false @Noname_25445
+{25377} 3@ = 1
+
+:Noname_25384
+{25384}   3@ <> 0
+{25391} goto_if_false @Noname_25424
+{25398} 3@ = read_memory 0@ {size} 1 {vp} False
+{25410} 0@ += 1
+{25417} goto @Noname_25384
+
+:Noname_25424
+{25424} 0@ += 3
+{25431} 2@ += 1
+{25438} goto @Noname_25362
+
+:Noname_25445
+{25445} cleo_return 1 {retParams} 0@ 
+
+:Noname_25453
+{25453} nop 
+
+:Noname_25455
+{25455} wait 0
+{25459} if 
+{25463}   samp_is_available 
+{25465} goto_if_false @Noname_25479
+{25472} goto @Noname_25486
+
+:Noname_25479
+{25479} goto @Noname_25455
+
+:Noname_25486
+{25486} 31@ = sf_d3d_create_font "VehicleNames" {size} 9 {flags} 5
+
+:Noname_25509
+{25509} wait 0
+{25513} get_cleo_shared_var 71 {var_result} 30@
+{25520} if 
+{25524}   30@ == 1
+{25531} goto_if_false @Noname_25862
+{25538} get_cleo_shared_var 16 {var_result} 30@
+{25545} if 
+{25549}   30@ == 1
+{25556} goto_if_false @Noname_25588
+
+:Noname_25563
+{25563} wait 0
+{25567} get_cleo_shared_var 16 {var_result} 30@
+{25574}   30@ == 0
+{25581} goto_if_false @Noname_25563
+
+:Noname_25588
+{25588}   2@ = allocate_memory 260
+{25596} if 
+{25600}   0@ = get_random_car_in_sphere_no_save_recursive 0.0 {y} 0.0 {z} 0.0 {radius} 999999.0 {findNext} False {skipWrecked} False
+{25629} goto_if_false @Noname_25862
+
+:Noname_25636
+{25636} if and
+{25640}   is_car_on_screen 0@
+{25645}   does_vehicle_exist 0@
+{25650} goto_if_false @Noname_25821
+{25657} 1@ = get_car_model 0@
+{25665} 2@ = get_name_of_vehicle_model 1@
+{25673} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 0@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} -2.0
+{25702}   19@, 20@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{25719} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 2@
+{25730} 17@ /= 2
+{25737} sub_int_lvar_from_int_lvar 19@ -= 17@
+{25745} get_cleo_shared_var 79 {var_result} 30@
+{25752} if 
+{25756}   30@ == 1
+{25763} goto_if_false @Noname_25784
+{25770} get_cleo_shared_var 49 {var_result} 10@
+{25777} goto @Noname_25791
+
+:Noname_25784
+{25784} 10@ = -1
+
+:Noname_25791
+{25791} sf_d3d_draw_text_with_font 31@ {text} 2@ {coordX} 19@ {coordY} 20@ {color} 10@
+{25808} cleo_call @Noname_25869 {numArgs} 1 {args} 0@ 
+
+:Noname_25821
+{25821}   not 0@ = get_random_car_in_sphere_no_save_recursive 0.0 {y} 0.0 {z} 0.0 {radius} 999999.0 {findNext} True {skipWrecked} False
+{25850} goto_if_false @Noname_25636
+{25857} free_memory 2@
+
+:Noname_25862
+{25862} goto @Noname_25509
+
+:Noname_25869
+{25869} set_lvar_int_to_lvar_int 1@ = 0@
+{25877} 2@ = get_car_model 0@
+{25885} get_cleo_shared_var 79 {var_result} 31@
+{25892} if 
+{25896}   31@ == 1
+{25903} goto_if_false @Noname_25924
+{25910} get_cleo_shared_var 49 {var_result} 10@
+{25917} goto @Noname_25931
+
+:Noname_25924
+{25924} 10@ = -1
+
+:Noname_25931
+{25931} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{25953} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{25976}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{25993} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26015} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26038}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26055} if 
+{26059}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26075} goto_if_false @Noname_26101
+{26082} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26101
+{26101} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26123} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26146}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26163} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26185} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26208}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26225} if 
+{26229}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26245} goto_if_false @Noname_26271
+{26252} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26271
+{26271} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26293} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26316}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26333} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26355} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26378}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26395} if 
+{26399}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26415} goto_if_false @Noname_26441
+{26422} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26441
+{26441} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26463} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26486}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26503} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26525} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26548}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26565} if 
+{26569}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26585} goto_if_false @Noname_26611
+{26592} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26611
+{26611} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26633} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26656}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26673} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26695} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26718}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26735} if 
+{26739}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26755} goto_if_false @Noname_26781
+{26762} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26781
+{26781} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26803} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26826}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26843} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26865} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26888}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{26905} if 
+{26909}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{26925} goto_if_false @Noname_26951
+{26932} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_26951
+{26951} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{26973} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{26996}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27013} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27035} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27058}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27075} if 
+{27079}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27095} goto_if_false @Noname_27121
+{27102} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27121
+{27121} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27143} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27166}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27183} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27205} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27228}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27245} if 
+{27249}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27265} goto_if_false @Noname_27291
+{27272} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27291
+{27291} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27313} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27336}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27353} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27375} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27398}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27415} if 
+{27419}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27435} goto_if_false @Noname_27461
+{27442} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27461
+{27461} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27483} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27506}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27523} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27545} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27568}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27585} if 
+{27589}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27605} goto_if_false @Noname_27631
+{27612} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27631
+{27631} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27653} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27676}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27693} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27715} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27738}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27755} if 
+{27759}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27775} goto_if_false @Noname_27801
+{27782} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27801
+{27801} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27823} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27846}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27863} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{27885} 3@, 4@, 5@ = get_offset_from_car_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{27908}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{27925} if 
+{27929}   is_point_on_screen 3@ {y} 4@ {z} 5@ {radius} 1.0
+{27945} goto_if_false @Noname_27971
+{27952} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_27971
+{27971} cleo_return 0 {retParams} 
+{27976} get_cleo_shared_var 49 {var_result} 7@
+{27983} sf_d3d_draw_borderless_box -4 {coordY} -4 {width} 2000 {height} 2000 {color} 7@
+{27998} return 
+
+:Noname_28000
+{28000} nop 
+
+:Noname_28002
+{28002} wait 0
+{28006}   samp_is_available 
+{28008} goto_if_false @Noname_28002
+
+:Noname_28015
+{28015} wait 0
+{28019} get_cleo_shared_var 18 {var_result} 31@
+{28026} if 
+{28030}   31@ == 1337
+{28038} goto_if_false @Noname_28052
+{28045} goto @Noname_28059
+
+:Noname_28052
+{28052} goto @Noname_28015
+
+:Noname_28059
+{28059} wait 0
+{28063} get_cleo_shared_var 67 {var_result} 31@
+{28070} if 
+{28074}   31@ == 1
+{28081} goto_if_false @Noname_28651
+{28088} get_cleo_shared_var 16 {var_result} 31@
+{28095} if 
+{28099}   31@ == 1
+{28106} goto_if_false @Noname_28138
+
+:Noname_28113
+{28113} wait 0
+{28117} get_cleo_shared_var 16 {var_result} 31@
+{28124}   31@ == 0
+{28131} goto_if_false @Noname_28113
+
+:Noname_28138
+{28138} if 
+{28142}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{28148} goto_if_false @Noname_28651
+{28155} if 
+{28159} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{28169} goto_if_false @Noname_28651
+{28176} if 
+{28180} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 16@ 17@ 18@ 
+{28202} goto_if_false @Noname_28651
+{28209} if 
+{28213}   does_char_exist 30@
+{28218} goto_if_false @Noname_28651
+{28225} 0@ = samp_get_player_id 30@
+{28233} cleo_call @Noname_30626 {numArgs} 1 {args} 30@ 16@ 17@ 18@ 
+{28255} 2@ = 0
+
+:Noname_28262
+{28262} cleo_call @Noname_8731 {numArgs} 2 {args} -23331 2@ 3@ 
+{28281} if 
+{28285}   scan_string 3@ {format} "%d:%d" {var_nValues} 6@ {var_values} 4@ 5@ 
+{28307} goto_if_false @Noname_28604
+{28314} samp_add_message_to_chat "1" {color} -1
+{28322} cleo_call @Noname_22388 {numArgs} 2 {args} 30@ 4@ 6@ 7@ 8@ 
+{28347} cleo_call @Noname_22388 {numArgs} 2 {args} 30@ 5@ 9@ 10@ 11@ 
+{28372} get_cleo_shared_var 77 {var_result} 31@
+{28379} if 
+{28383}   31@ == 1
+{28390} goto_if_false @Noname_28474
+{28397} cleo_call @Noname_30626 {numArgs} 1 {args} 30@ 16@ 17@ 18@ 
+{28419} add_float_lvar_to_float_lvar 6@ += 16@
+{28427} add_float_lvar_to_float_lvar 7@ += 17@
+{28435} add_float_lvar_to_float_lvar 8@ += 18@
+{28443} add_float_lvar_to_float_lvar 9@ += 16@
+{28451} add_float_lvar_to_float_lvar 10@ += 17@
+{28459} add_float_lvar_to_float_lvar 11@ += 18@
+{28467} goto @Noname_28544
+
+:Noname_28474
+{28474} cleo_call @Noname_30275 {numArgs} 1 {args} 30@ 16@ 17@ 18@ 
+{28496} add_float_lvar_to_float_lvar 6@ += 16@
+{28504} add_float_lvar_to_float_lvar 7@ += 17@
+{28512} add_float_lvar_to_float_lvar 8@ += 18@
+{28520} add_float_lvar_to_float_lvar 9@ += 16@
+{28528} add_float_lvar_to_float_lvar 10@ += 17@
+{28536} add_float_lvar_to_float_lvar 11@ += 18@
+
+:Noname_28544
+{28544}   12@, 13@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{28561}   14@, 15@ = sf_world_coords_to_window_screen_coords 9@ {worldCoordY} 10@ {worldCoordZ} 11@
+{28578} get_cleo_shared_var 49 {var_result} 6@
+{28585} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 2 {color} 6@
+
+:Noname_28604
+{28604} 2@ += 1
+{28611}   2@ > 25
+{28618} goto_if_false @Noname_28262
+{28625} get_cleo_shared_var 49 {var_result} 6@
+{28632} sf_d3d_draw_line 12@ {fromCoordY} 13@ {toCoordX} 14@ {toCoordY} 15@ {tickness} 3 {color} 6@
+
+:Noname_28651
+{28651} goto @Noname_28059
+
+:Noname_28658
+{28658} nop 
+
+:Noname_28660
+{28660} wait 0
+{28664} get_cleo_shared_var 70 {var_result} 0@
+{28671} if 
+{28675}   0@ == 1
+{28682} goto_if_false @Noname_30052
+{28689} get_cleo_shared_var 16 {var_result} 31@
+{28696} if 
+{28700}   31@ == 1
+{28707} goto_if_false @Noname_28739
+
+:Noname_28714
+{28714} wait 0
+{28718} get_cleo_shared_var 16 {var_result} 31@
+{28725}   31@ == 0
+{28732} goto_if_false @Noname_28714
+
+:Noname_28739
+{28739} 0@ = 0
+
+:Noname_28746
+{28746} if 
+{28750}   samp_is_remote_player_connected 0@
+{28755} goto_if_false @Noname_30030
+{28762} if 
+{28766} samp_get_player_char_by_id 0@ {number} 1@
+{28774} goto_if_false @Noname_30030
+{28781} if 
+{28785}   is_char_on_screen 1@
+{28790} goto_if_false @Noname_30030
+{28797} 2@ = get_char_model 1@
+{28805} get_cleo_shared_var 79 {var_result} 6@
+{28812} if 
+{28816}   6@ == 1
+{28823} goto_if_false @Noname_28844
+{28830} get_cleo_shared_var 49 {var_result} 10@
+{28837} goto @Noname_28852
+
+:Noname_28844
+{28844} 10@ = samp_get_player_color 0@
+
+:Noname_28852
+{28852} if 
+{28856} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{28869} goto_if_false @Noname_28886
+{28876} 10@ = -917249
+
+:Noname_28886
+{28886} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{28908} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{28931}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{28948} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{28970} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{28993}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29010} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29029} cleo_call @Noname_21163 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29051} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29074}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29091} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29113} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29136}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29153} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29172} cleo_call @Noname_21116 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29194} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29217}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29234} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29256} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29279}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29296} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29315} cleo_call @Noname_21220 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29337} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29360}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29377} cleo_call @Noname_21069 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29399} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29422}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29439} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29458} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29480} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29503}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29520} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29542} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29565}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29582} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29601} cleo_call @Noname_21351 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29623} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29646}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29663} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29685} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29708}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29725} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29744} cleo_call @Noname_21304 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29766} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29789}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29806} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29828} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29851}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29868} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+{29887} cleo_call @Noname_21408 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29909} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29932}   6@, 7@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{29949} cleo_call @Noname_21257 {numArgs} 1 {args} 2@ 3@ 4@ 5@ 
+{29971} 3@, 4@, 5@ = get_offset_from_char_in_world_coords 1@ {xOffset} 3@ {yOffset} 4@ {zOffset} 5@
+{29994}   8@, 9@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{30011} sf_d3d_draw_line 6@ {fromCoordY} 7@ {toCoordX} 8@ {toCoordY} 9@ {tickness} 1 {color} 10@
+
+:Noname_30030
+{30030} 0@ += 1
+{30037}   0@ > 1000
+{30045} goto_if_false @Noname_28746
+
+:Noname_30052
+{30052} goto @Noname_28660
+
+:Noname_30059
+{30059} 31@ = get_current_char_weapon $scplayer
+{30067} if and
+{30071}   31@ <= 34
+{30078}   31@ >= 21
+{30085} goto_if_false @Noname_30101
+{30092}   is_pc_version 
+{30094} goto @Noname_30103
+
+:Noname_30101
+{30101}   is_australian_game 
+
+:Noname_30103
+{30103} cleo_return 0 {retParams} 
+
+:Noname_30108
+{30108} 14@ = get_var_pointer 0@
+{30116} 15@ = get_var_pointer 3@
+{30124} 16@ = get_var_pointer 6@
+{30132} 17@ = get_var_pointer 9@
+{30140} call_function 7392816 {numArgs} 6 {pop} 6 {args} 0 0 17@ 16@ 15@ 14@ 
+{30168} 12@ = 640.0
+{30178} 13@ = 448.0
+{30188} 14@ = read_memory 12677188 {size} 4 {vp} False
+{30202} 15@ = read_memory 12677192 {size} 4 {vp} False
+{30216} cset_lvar_float_to_lvar_int 14@ =# 14@
+{30224} cset_lvar_float_to_lvar_int 15@ =# 15@
+{30232} div_float_lvar_by_float_lvar 12@ /= 14@
+{30240} div_float_lvar_by_float_lvar 13@ /= 15@
+{30248} mult_float_lvar_by_float_lvar 3@ *= 12@
+{30256} mult_float_lvar_by_float_lvar 4@ *= 13@
+{30264} cleo_return 2 {retParams} 3@ 4@ 
+
+:Noname_30275
+{30275} if 
+{30279}   is_char_in_any_car 0@
+{30284} goto_if_false @Noname_30448
+{30291} 12@ = 10
+{30298} 13@ = 10
+{30305} add_int_lvar_to_int_lvar 13@ += 12@
+{30313} cset_lvar_float_to_lvar_int 13@ =# 13@
+{30321} get_cleo_shared_var 4 {var_result} 20@
+{30328} add_float_lvar_to_float_lvar 13@ += 20@
+{30336} 21@ = store_car_char_is_in_no_save 0@
+{30344} 14@, 15@, 16@ = get_car_speed_vector 21@
+{30358} 17@, 18@, 19@ = get_offset_from_char_in_world_coords 0@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{30387} 14@ /= 888.0
+{30397} 15@ /= 888.0
+{30407} 16@ /= 888.0
+{30417} mult_float_lvar_by_float_lvar 14@ *= 13@
+{30425} mult_float_lvar_by_float_lvar 15@ *= 13@
+{30433} mult_float_lvar_by_float_lvar 16@ *= 13@
+{30441} goto @Noname_30590
+
+:Noname_30448
+{30448} 12@ = 10
+{30455} 13@ = 10
+{30462} add_int_lvar_to_int_lvar 13@ += 12@
+{30470} cset_lvar_float_to_lvar_int 13@ =# 13@
+{30478} get_cleo_shared_var 4 {var_result} 20@
+{30485} add_float_lvar_to_float_lvar 13@ += 20@
+{30493} 14@, 15@, 16@ = get_char_velocity 0@
+{30507} 17@, 18@, 19@ = get_offset_from_char_in_world_coords 0@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{30536} 14@ /= 888.0
+{30546} 15@ /= 888.0
+{30556} 16@ /= 888.0
+{30566} mult_float_lvar_by_float_lvar 14@ *= 13@
+{30574} mult_float_lvar_by_float_lvar 15@ *= 13@
+{30582} mult_float_lvar_by_float_lvar 16@ *= 13@
+
+:Noname_30590
+{30590} cleo_return 3 {retParams} 14@ 15@ 16@ 
+{30604} cleo_call @Noname_30626 {numArgs} 1 {args} $scplayer 1@ 2@ 3@ 
+
+:Noname_30626
+{30626} if 
+{30630}   is_char_in_any_car 0@
+{30635} goto_if_false @Noname_30817
+{30642} 10@ = samp_get_player_id 0@
+{30650} 11@ = samp_get_player_id $scplayer
+{30658} 12@ = samp_get_player_ping 10@
+{30666} 13@ = samp_get_player_ping 11@
+{30674} add_int_lvar_to_int_lvar 13@ += 12@
+{30682} cset_lvar_float_to_lvar_int 13@ =# 13@
+{30690} get_cleo_shared_var 4 {var_result} 20@
+{30697} add_float_lvar_to_float_lvar 13@ += 20@
+{30705} 21@ = store_car_char_is_in_no_save 0@
+{30713} 14@, 15@, 16@ = get_car_speed_vector 21@
+{30727} 17@, 18@, 19@ = get_offset_from_char_in_world_coords 0@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{30756} 14@ /= 888.0
+{30766} 15@ /= 888.0
+{30776} 16@ /= 888.0
+{30786} mult_float_lvar_by_float_lvar 14@ *= 13@
+{30794} mult_float_lvar_by_float_lvar 15@ *= 13@
+{30802} mult_float_lvar_by_float_lvar 16@ *= 13@
+{30810} goto @Noname_30977
+
+:Noname_30817
+{30817} 10@ = samp_get_player_id 0@
+{30825} 11@ = samp_get_player_id $scplayer
+{30833} 12@ = samp_get_player_ping 10@
+{30841} 13@ = samp_get_player_ping 11@
+{30849} add_int_lvar_to_int_lvar 13@ += 12@
+{30857} cset_lvar_float_to_lvar_int 13@ =# 13@
+{30865} get_cleo_shared_var 4 {var_result} 20@
+{30872} add_float_lvar_to_float_lvar 13@ += 20@
+{30880} 14@, 15@, 16@ = get_char_velocity 0@
+{30894} 17@, 18@, 19@ = get_offset_from_char_in_world_coords 0@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{30923} 14@ /= 888.0
+{30933} 15@ /= 888.0
+{30943} 16@ /= 888.0
+{30953} mult_float_lvar_by_float_lvar 14@ *= 13@
+{30961} mult_float_lvar_by_float_lvar 15@ *= 13@
+{30969} mult_float_lvar_by_float_lvar 16@ *= 13@
+
+:Noname_30977
+{30977} cleo_return 3 {retParams} 14@ 15@ 16@ 
+
+:Noname_30991
+{30991} 31@ = get_current_char_weapon $scplayer
+{30999} if 
+{31003}   31@ > 21
+{31010} goto_if_false @Noname_31103
+{31017} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 339.0 {gameScreenCoordY} 178.5
+{31035} if 
+{31039}   31@ < 34
+{31046} goto_if_false @Noname_31078
+{31053} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 339.0 {gameScreenCoordY} 178.5
+{31071} goto @Noname_31096
+
+:Noname_31078
+{31078} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 320.0 {gameScreenCoordY} 224.5
+
+:Noname_31096
+{31096} goto @Noname_31121
+
+:Noname_31103
+{31103} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 320.0 {gameScreenCoordY} 224.5
+
+:Noname_31121
+{31121} cleo_return 2 {retParams} 10@ 11@ 
+{31132} 0@ = 1337
+{31140} get_cleo_shared_var 20 {var_result} 12@
+{31147} if 
+{31151}   31@ = load_dynamic_library "kernel32.dll"
+{31170} goto_if_false @Noname_31284
+{31177} 0@ += 69
+{31184} if 
+{31188}   30@ = get_dynamic_library_procedure "GetVolumeInformationA" {self} 31@
+{31219} goto_if_false @Noname_31276
+{31226} 0@ += 88
+{31233} 29@ = get_var_pointer 29@
+{31241} call_function 30@ {numArgs} 8 {pop} 0 {args} 0 0 0 0 29@ 0 0 0 
+{31268} 0@ += 666
+
+:Noname_31276
+{31276} 0@ -= 1337
+
+:Noname_31284
+{31284} free_dynamic_library 31@
+{31289} 0@ += 1337
+{31297} add_int_lvar_to_int_lvar 29@ += 0@
+{31305} if 
+{31309}   12@ == 0
+{31316} goto_if_false @Noname_31331
+{31323} 29@ += 1337
+
+:Noname_31331
+{31331} cleo_return 1 {retParams} 29@ 
+
+:Noname_31339
+{31339} nop 
+
+:Noname_31341
+{31341} wait 0
+{31345} get_cleo_shared_var 76 {var_result} 0@
+{31352} if 
+{31356}   0@ == 1
+{31363} goto_if_false @Noname_31928
+{31370} get_cleo_shared_var 16 {var_result} 31@
+{31377} if 
+{31381}   31@ == 1
+{31388} goto_if_false @Noname_31420
+
+:Noname_31395
+{31395} wait 0
+{31399} get_cleo_shared_var 16 {var_result} 31@
+{31406}   31@ == 0
+{31413} goto_if_false @Noname_31395
+
+:Noname_31420
+{31420} if 
+{31424}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{31430} goto_if_false @Noname_31928
+{31437} if 
+{31441} cleo_call @Noname_40961 {numArgs} 0 {args} 31@ 1@ 2@ 3@ 
+{31463} goto_if_false @Noname_31928
+{31470} cleo_call @Noname_32000 {numArgs} 1 {args} 31@ 27@ 
+{31486} cleo_call @Noname_32212 {numArgs} 1 {args} 31@ 26@ 
+{31502} cleo_call @Noname_32424 {numArgs} 1 {args} 31@ 25@ 
+{31518} cleo_call @Noname_32636 {numArgs} 1 {args} 31@ 24@ 
+{31534} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 27@ 1@ 2@ 3@ 
+{31559} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 26@ 4@ 5@ 6@ 
+{31584} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 25@ 7@ 8@ 9@ 
+{31609} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 24@ 10@ 11@ 12@ 
+{31634} 9@ += 0.2
+{31644} 12@ -= 0.2
+{31654} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 6 13@ 14@ 15@ 
+{31678} cleo_call @Noname_22388 {numArgs} 2 {args} 31@ 7 16@ 17@ 18@ 
+{31702}   13@, 14@ = sf_world_coords_to_window_screen_coords 13@ {worldCoordY} 14@ {worldCoordZ} 15@
+{31719}   16@, 17@ = sf_world_coords_to_window_screen_coords 16@ {worldCoordY} 17@ {worldCoordZ} 18@
+{31736} cleo_call @Noname_31935 {numArgs} 4 {args} 13@ 14@ 16@ 17@ 18@ 
+{31761}   1@, 2@ = sf_world_coords_to_window_screen_coords 1@ {worldCoordY} 2@ {worldCoordZ} 3@
+{31778}   4@, 5@ = sf_world_coords_to_window_screen_coords 4@ {worldCoordY} 5@ {worldCoordZ} 6@
+{31795}   7@, 8@ = sf_world_coords_to_window_screen_coords 7@ {worldCoordY} 8@ {worldCoordZ} 9@
+{31812}   10@, 11@ = sf_world_coords_to_window_screen_coords 10@ {worldCoordY} 11@ {worldCoordZ} 12@
+{31829} sub_int_lvar_from_int_lvar 1@ -= 18@
+{31837} add_int_lvar_to_int_lvar 4@ += 18@
+{31845} get_cleo_shared_var 49 {var_result} 20@
+{31852} sf_d3d_draw_line 1@ {fromCoordY} 8@ {toCoordX} 4@ {toCoordY} 8@ {tickness} 1 {color} 20@
+{31871} sf_d3d_draw_line 4@ {fromCoordY} 8@ {toCoordX} 4@ {toCoordY} 11@ {tickness} 1 {color} 20@
+{31890} sf_d3d_draw_line 4@ {fromCoordY} 11@ {toCoordX} 1@ {toCoordY} 11@ {tickness} 1 {color} 20@
+{31909} sf_d3d_draw_line 1@ {fromCoordY} 11@ {toCoordX} 1@ {toCoordY} 8@ {tickness} 1 {color} 20@
+
+:Noname_31928
+{31928} goto @Noname_31341
+
+:Noname_31935
+{31935} cset_lvar_float_to_lvar_int 0@ =# 0@
+{31943} cset_lvar_float_to_lvar_int 1@ =# 1@
+{31951} cset_lvar_float_to_lvar_int 2@ =# 2@
+{31959} cset_lvar_float_to_lvar_int 3@ =# 3@
+{31967} 4@ = get_distance_between_coords_2d 0@ {fromY} 1@ {toX} 2@ {toZ} 3@
+{31984} cset_lvar_int_to_lvar_float 4@ =# 4@
+{31992} cleo_return 1 {retParams} 4@ 
+
+:Noname_32000
+{32000} set_lvar_int_to_lvar_int 15@ = 0@
+{32008} 7@ = 640.0
+{32018} 0@ = 0
+
+:Noname_32025
+{32025} cleo_call @Noname_8731 {numArgs} 2 {args} -41937 0@ 1@ 
+{32046} if 
+{32050}   scan_string 1@ {format} "%d" {var_nValues} TIMERB {var_values} 2@ 
+{32066} goto_if_false @Noname_32183
+{32073} cleo_call @Noname_22388 {numArgs} 2 {args} 15@ 2@ 3@ 4@ 5@ 
+{32098}   4@, 5@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{32115} 4@, 5@ = sf_window_screen_coords_to_game_screen_coords 4@ {windowScreenCoordY} 5@
+{32129} 6@ = get_distance_between_coords_2d 4@ {fromY} 5@ {toX} 0.0 {toZ} 5@
+{32148} if 
+{32152}   is_float_lvar_greater_than_float_lvar 7@ > 6@
+{32160} goto_if_false @Noname_32183
+{32167} set_lvar_float_to_lvar_float 7@ = 6@
+{32175} set_lvar_int_to_lvar_int 31@ = 2@
+
+:Noname_32183
+{32183} 0@ += 1
+{32190}   0@ > 26
+{32197} goto_if_false @Noname_32025
+{32204} cleo_return 1 {retParams} 31@ 
+
+:Noname_32212
+{32212} set_lvar_int_to_lvar_int 15@ = 0@
+{32220} 7@ = 640.0
+{32230} 0@ = 0
+
+:Noname_32237
+{32237} cleo_call @Noname_8731 {numArgs} 2 {args} -41937 0@ 1@ 
+{32258} if 
+{32262}   scan_string 1@ {format} "%d" {var_nValues} TIMERB {var_values} 2@ 
+{32278} goto_if_false @Noname_32395
+{32285} cleo_call @Noname_22388 {numArgs} 2 {args} 15@ 2@ 3@ 4@ 5@ 
+{32310}   4@, 5@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{32327} 4@, 5@ = sf_window_screen_coords_to_game_screen_coords 4@ {windowScreenCoordY} 5@
+{32341} 6@ = get_distance_between_coords_2d 4@ {fromY} 5@ {toX} 640.0 {toZ} 5@
+{32360} if 
+{32364}   is_float_lvar_greater_than_float_lvar 7@ > 6@
+{32372} goto_if_false @Noname_32395
+{32379} set_lvar_float_to_lvar_float 7@ = 6@
+{32387} set_lvar_int_to_lvar_int 30@ = 2@
+
+:Noname_32395
+{32395} 0@ += 1
+{32402}   0@ > 26
+{32409} goto_if_false @Noname_32237
+{32416} cleo_return 1 {retParams} 30@ 
+
+:Noname_32424
+{32424} set_lvar_int_to_lvar_int 15@ = 0@
+{32432} 7@ = 448.0
+{32442} 0@ = 0
+
+:Noname_32449
+{32449} cleo_call @Noname_8731 {numArgs} 2 {args} -41937 0@ 1@ 
+{32470} if 
+{32474}   scan_string 1@ {format} "%d" {var_nValues} TIMERB {var_values} 2@ 
+{32490} goto_if_false @Noname_32607
+{32497} cleo_call @Noname_22388 {numArgs} 2 {args} 15@ 2@ 3@ 4@ 5@ 
+{32522}   4@, 5@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{32539} 4@, 5@ = sf_window_screen_coords_to_game_screen_coords 4@ {windowScreenCoordY} 5@
+{32553} 6@ = get_distance_between_coords_2d 4@ {fromY} 5@ {toX} 4@ {toZ} 0.0
+{32572} if 
+{32576}   is_float_lvar_greater_than_float_lvar 7@ > 6@
+{32584} goto_if_false @Noname_32607
+{32591} set_lvar_float_to_lvar_float 7@ = 6@
+{32599} set_lvar_int_to_lvar_int 29@ = 2@
+
+:Noname_32607
+{32607} 0@ += 1
+{32614}   0@ > 26
+{32621} goto_if_false @Noname_32449
+{32628} cleo_return 1 {retParams} 29@ 
+
+:Noname_32636
+{32636} set_lvar_int_to_lvar_int 15@ = 0@
+{32644} 7@ = 448.0
+{32654} 0@ = 0
+
+:Noname_32661
+{32661} cleo_call @Noname_8731 {numArgs} 2 {args} -41937 0@ 1@ 
+{32682} if 
+{32686}   scan_string 1@ {format} "%d" {var_nValues} TIMERB {var_values} 2@ 
+{32702} goto_if_false @Noname_32819
+{32709} cleo_call @Noname_22388 {numArgs} 2 {args} 15@ 2@ 3@ 4@ 5@ 
+{32734}   4@, 5@ = sf_world_coords_to_window_screen_coords 3@ {worldCoordY} 4@ {worldCoordZ} 5@
+{32751} 4@, 5@ = sf_window_screen_coords_to_game_screen_coords 4@ {windowScreenCoordY} 5@
+{32765} 6@ = get_distance_between_coords_2d 4@ {fromY} 5@ {toX} 4@ {toZ} 448.0
+{32784} if 
+{32788}   is_float_lvar_greater_than_float_lvar 7@ > 6@
+{32796} goto_if_false @Noname_32819
+{32803} set_lvar_float_to_lvar_float 7@ = 6@
+{32811} set_lvar_int_to_lvar_int 28@ = 2@
+
+:Noname_32819
+{32819} 0@ += 1
+{32826}   0@ > 26
+{32833} goto_if_false @Noname_32661
+{32840} cleo_return 1 {retParams} 28@ 
+
+:Noname_32848
+{32848} nop 
+
+:Noname_32850
+{32850} wait 0
+{32854} get_cleo_shared_var 72 {var_result} 0@
+{32861} if 
+{32865}   0@ == 1
+{32872} goto_if_false @Noname_33100
+{32879} get_cleo_shared_var 16 {var_result} 31@
+{32886} if 
+{32890}   31@ == 1
+{32897} goto_if_false @Noname_32929
+
+:Noname_32904
+{32904} wait 0
+{32908} get_cleo_shared_var 16 {var_result} 31@
+{32915}   31@ == 0
+{32922} goto_if_false @Noname_32904
+
+:Noname_32929
+{32929} if 
+{32933}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{32939} goto_if_false @Noname_33100
+{32946} if 
+{32950} cleo_call @Noname_40961 {numArgs} 0 {args} 1@ 7@ 8@ 9@ 
+{32972} goto_if_false @Noname_33100
+{32979} cleo_call @Noname_30991 {numArgs} 0 {args} 24@ 23@ 
+{32995} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 4 7@ 8@ 9@ 
+{33019}   10@, 11@ = sf_world_coords_to_window_screen_coords 7@ {worldCoordY} 8@ {worldCoordZ} 9@
+{33036} get_cleo_shared_var 49 {var_result} 6@
+{33043} sf_d3d_draw_line 10@ {fromCoordY} 11@ {toCoordX} 24@ {toCoordY} 23@ {tickness} 1 {color} 6@
+{33062} sf_d3d_draw_polygon 10@ {coordY} 11@ {width} 4 {height} 4 {cornerCount} 10 {heading} 0 {color} 6@
+{33081} sf_d3d_draw_polygon 10@ {coordY} 11@ {width} 4 {height} 4 {cornerCount} 10 {heading} 0 {color} 6@
+
+:Noname_33100
+{33100} goto @Noname_32850
+
+:Noname_33107
+{33107} nop 
+
+:Noname_33109
+{33109} wait 0
+{33113} if 
+{33117}   samp_is_available 
+{33119} goto_if_false @Noname_33133
+{33126} goto @Noname_33140
+
+:Noname_33133
+{33133} goto @Noname_33109
+
+:Noname_33140
+{33140} 31@ = sf_d3d_create_font "NameTagHack" {size} 8 {flags} 5
+
+:Noname_33162
+{33162} wait 0
+{33166} get_cleo_shared_var 68 {var_result} 30@
+{33173} if 
+{33177}   30@ == 1
+{33184} goto_if_false @Noname_34041
+{33191} get_cleo_shared_var 16 {var_result} 30@
+{33198} if 
+{33202}   30@ == 1
+{33209} goto_if_false @Noname_33241
+
+:Noname_33216
+{33216} wait 0
+{33220} get_cleo_shared_var 16 {var_result} 30@
+{33227}   30@ == 0
+{33234} goto_if_false @Noname_33216
+
+:Noname_33241
+{33241} 0@ = 0
+
+:Noname_33248
+{33248} if 
+{33252}   samp_is_remote_player_connected 0@
+{33257} goto_if_false @Noname_34019
+{33264} if 
+{33268} samp_get_player_char_by_id 0@ {number} 1@
+{33276} goto_if_false @Noname_34019
+{33283} if 
+{33287}   is_char_on_screen 1@
+{33292} goto_if_false @Noname_34019
+{33299} 2@ = get_char_model 1@
+{33307} 3@, 4@, 5@, 6@, 7@, 8@ = get_model_dimensions 2@
+{33330} 6@, 7@, 8@ = get_offset_from_char_in_world_coords 1@ {xOffset} 0.0 {yOffset} 0.0 {zOffset} 5@
+{33357}   9@, 10@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{33374} set_lvar_int_to_lvar_int 19@ = 9@
+{33382} set_lvar_int_to_lvar_int 20@ = 10@
+{33390} 11@ = samp_get_player_nickname 0@
+{33398} 12@ = samp_get_player_color 0@
+{33406} if 
+{33410}   samp_is_player_paused 0@
+{33415} goto_if_false @Noname_33432
+{33422} 12@ = -11184811
+
+:Noname_33432
+{33432} if 
+{33436} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{33449} goto_if_false @Noname_33466
+{33456} 12@ = -917249
+
+:Noname_33466
+{33466} 13@ = samp_get_player_ping 0@
+{33474} 14@ = samp_get_player_armor 0@
+{33482} 15@ = samp_get_player_health 0@
+{33490}   16@ = samp_get_player_score 0@
+{33498} 19@ -= 50
+{33505} 20@ += 12
+{33512} sf_d3d_draw_borderless_box 19@ {coordY} 20@ {width} 100 {height} 5 {color} -16777216
+{33529} 20@ += 1
+{33536} sf_d3d_draw_borderless_box 19@ {coordY} 20@ {width} 15@ {height} 2 {color} -1048576
+{33554} if 
+{33558}   14@ > 6
+{33565} goto_if_false @Noname_33594
+{33572} 20@ += 4
+{33579} sf_d3d_draw_borderless_box 19@ {coordY} 20@ {width} 14@ {height} 1 {color} -1
+
+:Noname_33594
+{33594} set_lvar_int_to_lvar_int 19@ = 9@
+{33602} set_lvar_int_to_lvar_int 20@ = 10@
+{33610} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 11@
+{33621} 17@ /= 2
+{33628} sub_int_lvar_from_int_lvar 19@ -= 17@
+{33636} sf_d3d_draw_text_with_font 31@ {text} 11@ {coordX} 19@ {coordY} 20@ {color} 12@
+{33653} set_lvar_int_to_lvar_int 19@ = 9@
+{33661} set_lvar_int_to_lvar_int 20@ = 10@
+{33669} 20@ += 18
+{33676}   18@ = allocate_memory 260
+{33684} add_int_lvar_to_int_lvar 14@ += 15@
+{33692} string_format 18@ {format} "H: %d ID: %d P: %d S: %d" {args} 14@ 0@ 13@ 16@ 
+{33736} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 18@
+{33747} 17@ /= 2
+{33754} sub_int_lvar_from_int_lvar 19@ -= 17@
+{33762} sf_d3d_draw_text_with_font 31@ {text} 18@ {coordX} 19@ {coordY} 20@ {color} 12@
+{33779} free_memory 18@
+{33784} set_lvar_int_to_lvar_int 19@ = 9@
+{33792} 20@ += 8
+{33799} if 
+{33803}   samp_is_player_paused 0@
+{33808} goto_if_false @Noname_33904
+{33815}   18@ = allocate_memory 260
+{33823} add_int_lvar_to_int_lvar 14@ += 15@
+{33831} string_format 18@ {format} "- PAUSED -"
+{33849} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 18@
+{33860} 17@ /= 2
+{33867} sub_int_lvar_from_int_lvar 19@ -= 17@
+{33875} sf_d3d_draw_text_with_font 31@ {text} 18@ {coordX} 19@ {coordY} 20@ {color} 12@
+{33892} free_memory 18@
+{33897} goto @Noname_34003
+
+:Noname_33904
+{33904} if 
+{33908}   is_char_in_any_car 1@
+{33913} goto_if_false @Noname_34003
+{33920}   18@ = allocate_memory 260
+{33928} add_int_lvar_to_int_lvar 14@ += 15@
+{33936} string_format 18@ {format} "- DRIVING -"
+{33955} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 18@
+{33966} 17@ /= 2
+{33973} sub_int_lvar_from_int_lvar 19@ -= 17@
+{33981} sf_d3d_draw_text_with_font 31@ {text} 18@ {coordX} 19@ {coordY} 20@ {color} 12@
+{33998} free_memory 18@
+
+:Noname_34003
+{34003} set_lvar_int_to_lvar_int 19@ = 9@
+{34011} set_lvar_int_to_lvar_int 20@ = 10@
+
+:Noname_34019
+{34019} 0@ += 1
+{34026}   0@ > 1000
+{34034} goto_if_false @Noname_33248
+
+:Noname_34041
+{34041} goto @Noname_33162
+{34048} 1@ = samp_get_base_address 
+{34053} 1@ += 2173568
+{34063} 1@ = read_memory 1@ {size} 4 {vp} False
+{34075} 1@ += 965
+{34083} 1@ = read_memory 1@ {size} 4 {vp} False
+{34095} 1@ += 56
+{34102} write_memory 1@ {size} 1 {value} 0@ {vp} False
+{34114} cleo_return 0 {retParams} 
+
+:Noname_34119
+{34119} nop 
+
+:Noname_34121
+{34121} wait 0
+{34125} if 
+{34129}   samp_is_available 
+{34131} goto_if_false @Noname_34145
+{34138} goto @Noname_34152
+
+:Noname_34145
+{34145} goto @Noname_34121
+
+:Noname_34152
+{34152} 31@ = sf_d3d_create_font "FarESP" {size} 8 {flags} 5
+{34169}   samp_hook_chat_command_as_local "opshowfar" {callback} @Noname_34970
+
+:Noname_34187
+{34187} wait 0
+{34191} if 
+{34195}   22@ == 1
+{34202} goto_if_false @Noname_34223
+{34209} 22@ = 0
+{34216} wait 2000
+{34221} restore_camera_jumpcut 
+
+:Noname_34223
+{34223} get_cleo_shared_var 75 {var_result} 30@
+{34230} if 
+{34234}   30@ == 1
+{34241} goto_if_false @Noname_34963
+{34248} get_cleo_shared_var 16 {var_result} 30@
+{34255} if 
+{34259}   30@ == 1
+{34266} goto_if_false @Noname_34298
+
+:Noname_34273
+{34273} wait 0
+{34277} get_cleo_shared_var 16 {var_result} 30@
+{34284}   30@ == 0
+{34291} goto_if_false @Noname_34273
+
+:Noname_34298
+{34298} 24@ = 0.0
+{34308} 0@ = 0
+
+:Noname_34315
+{34315} if 
+{34319}   samp_is_remote_player_connected 0@
+{34324} goto_if_false @Noname_34941
+{34331} if and
+{34335}   not samp_is_player_npc 0@
+{34340} samp_get_player_char_by_id 0@ {number} 2@
+{34348} goto_if_false @Noname_34941
+{34355} 6@, 7@, 8@ = samp_get_streamed_out_player_coords 0@
+{34369} add_float_lvar_to_float_lvar 8@ += 24@
+{34377} if and
+{34381}   6@ <> 0.0
+{34391}   7@ <> 0.0
+{34401} goto_if_false @Noname_34941
+{34408} 11@, 12@, 13@ = get_active_camera_coordinates 
+{34419} 21@ = get_distance_between_coords_3d 11@ {fromY} 12@ {fromZ} 13@ {toX} 6@ {toY} 7@ {toZ} 8@
+{34442} cleo_call @Noname_20856 {numArgs} 4 {args} 6@ 7@ 11@ 12@ 14@ 
+{34467} cleo_call @Noname_22487 {numArgs} 0 {args} 16@ 15@ 
+{34483} 15@ -= 90.0
+{34493} cleo_call @Noname_40849 {numArgs} 6 {args} 11@ 12@ 13@ 14@ 15@ 100.0 9@ 10@ 11@ 
+{34532} if 
+{34536}   is_point_on_screen 9@ {y} 10@ {z} 11@ {radius} 10.0
+{34552} goto_if_false @Noname_34941
+{34559}   9@, 10@ = sf_world_coords_to_window_screen_coords 6@ {worldCoordY} 7@ {worldCoordZ} 8@
+{34576} set_lvar_int_to_lvar_int 19@ = 9@
+{34584} set_lvar_int_to_lvar_int 20@ = 10@
+{34592} 11@ = samp_get_player_nickname 0@
+{34600} 12@ = samp_get_player_color 0@
+{34608} if 
+{34612}   samp_is_player_paused 0@
+{34617} goto_if_false @Noname_34634
+{34624} 12@ = -11184811
+
+:Noname_34634
+{34634} if 
+{34638} cleo_call @Noname_37495 {numArgs} 1 {args} 0@ 
+{34651} goto_if_false @Noname_34668
+{34658} 12@ = -917249
+
+:Noname_34668
+{34668} 13@ = samp_get_player_ping 0@
+{34676} 14@ = samp_get_player_armor 0@
+{34684} 15@ = samp_get_player_health 0@
+{34692}   16@ = samp_get_player_score 0@
+{34700} set_lvar_int_to_lvar_int 19@ = 9@
+{34708} set_lvar_int_to_lvar_int 20@ = 10@
+{34716} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 11@
+{34727} 17@ /= 2
+{34734} sub_int_lvar_from_int_lvar 19@ -= 17@
+{34742} sf_d3d_draw_text_with_font 31@ {text} 11@ {coordX} 19@ {coordY} 20@ {color} 12@
+{34759} set_lvar_int_to_lvar_int 19@ = 9@
+{34767} set_lvar_int_to_lvar_int 20@ = 10@
+{34775} 20@ += 13
+{34782}   18@ = allocate_memory 260
+{34790} add_int_lvar_to_int_lvar 14@ += 15@
+{34798} string_format 18@ {format} "ID: %d P: %d S: %d D: %0.1f" {args} 0@ 13@ 16@ 21@ 
+{34845} 17@ = sf_d3d_get_draw_width_of_text_with_font 31@ {text} 18@
+{34856} 17@ /= 2
+{34863} sub_int_lvar_from_int_lvar 19@ -= 17@
+{34871} 12@ += 100
+{34878} sf_d3d_draw_text_with_font 31@ {text} 18@ {coordX} 19@ {coordY} 20@ {color} 12@
+{34895} free_memory 18@
+{34900} set_lvar_int_to_lvar_int 19@ = 9@
+{34908} 20@ += 8
+{34915} set_lvar_int_to_lvar_int 19@ = 9@
+{34923} set_lvar_int_to_lvar_int 20@ = 10@
+{34931} 24@ += 10.0
+
+:Noname_34941
+{34941} 0@ += 1
+{34948}   0@ > 1000
+{34956} goto_if_false @Noname_34315
+
+:Noname_34963
+{34963} goto @Noname_34187
+
+:Noname_34970
+{34970}   21@ = sf_get_params_of_last_triggered_command 
+{34975} if 
+{34979}   scan_string 21@ {format} "%d" {var_nValues} TIMERB {var_values} 22@ 
+{34995} goto_if_false @Noname_35080
+{35002} if 
+{35006}   samp_is_remote_player_connected 22@
+{35011} goto_if_false @Noname_35080
+{35018} 22@ = 1
+{35025} 23@, 24@, 25@ = samp_get_streamed_out_player_coords 22@
+{35039} request_collision 23@ {y} 24@
+{35047} camera_set_vector_move 23@ {fromY} 24@ {fromZ} 25@ {toX} 23@ {toY} 24@ {toZ} 25@ {time} 3000 {ease} False
+{35072} request_collision 23@ {y} 24@
+
+:Noname_35080
+{35080} sf_command_return 
+{35082} set_lvar_float_to_lvar_float 4@ = 1@
+{35090} set_lvar_float_to_lvar_float 5@ = 2@
+{35098} set_lvar_float_to_lvar_float 6@ = 3@
+{35106} 1@, 2@, 3@ = get_active_camera_coordinates 
+{35117} 7@, 8@, 9@ = get_offset_from_char_in_world_coords $scplayer {xOffset} 0.0 {yOffset} 0.0 {zOffset} 0.0
+{35146} sub_float_lvar_from_float_lvar 1@ -= 4@
+{35154} sub_float_lvar_from_float_lvar 2@ -= 5@
+{35162} abs_var_float 1@
+{35167} abs_var_float 2@
+{35172} set_lvar_float_to_lvar_float 10@ = 1@
+{35180} set_lvar_float_to_lvar_float 11@ = 2@
+{35188} mult_float_lvar_by_float_lvar 10@ *= 10@
+{35196} mult_float_lvar_by_float_lvar 11@ *= 11@
+{35204} add_float_lvar_to_float_lvar 10@ += 11@
+{35212} 10@ = sqrt 10@
+{35220} set_lvar_float_to_lvar_float 11@ = 1@
+{35228} set_lvar_float_to_lvar_float 12@ = 10@
+{35236} div_float_lvar_by_float_lvar 11@ /= 12@
+{35244} call_function 4327328 {numArgs} 1 {pop} 1 {args} 11@ 
+{35259} 12@ = pop_float 
+{35264} call_function 4775488 {numArgs} 1 {pop} 1 {args} 11@ 
+{35279} 13@ = pop_float 
+{35284} if 
+{35288} cleo_call @Noname_35851 {numArgs} 0 {args} 16@ 
+{35301} goto_if_false @Noname_35409
+{35308} if 
+{35312} cleo_call @Noname_35417 {numArgs} 7 {args} 4@ 5@ 7@ 8@ 12@ 13@ 16@ 15@ 
+{35346} goto_if_false @Noname_35407
+{35353} if 
+{35357}   is_current_char_weapon $scplayer {weaponType} WeaponType.Sniper
+{35364} goto_if_false @Noname_35388
+{35371} 15@ += 0.08
+{35381} goto @Noname_35398
+
+:Noname_35388
+{35388} 15@ += 0.04
+
+:Noname_35398
+{35398}   is_pc_version 
+{35400} goto @Noname_35409
+
+:Noname_35407
+{35407}   is_australian_game 
+
+:Noname_35409
+{35409} cleo_return 1 {retParams} 15@ 
+
+:Noname_35417
+{35417} if 
+{35421}   6@ == 5
+{35428} goto_if_false @Noname_35482
+{35435} 7@ = 0.01
+{35445} 8@ = 0.01
+{35455} 9@ = 1.5607
+{35465} 10@ = 1.5807
+{35475} goto @Noname_35587
+
+:Noname_35482
+{35482} if 
+{35486}   6@ == 6
+{35493} goto_if_false @Noname_35547
+{35500} 7@ = 0.018
+{35510} 8@ = 0.02
+{35520} 9@ = 1.5507
+{35530} 10@ = 1.5907
+{35540} goto @Noname_35587
+
+:Noname_35547
+{35547} 7@ = 0.0
+{35557} 8@ = 0.0
+{35567} 9@ = 1.5707
+{35577} 10@ = 1.5707
+
+:Noname_35587
+{35587} if and
+{35591}   is_float_lvar_greater_than_float_lvar 2@ > 0@
+{35599}   is_float_lvar_greater_than_float_lvar 3@ > 1@
+{35607} goto_if_false @Noname_35630
+{35614} sub_float_lvar_from_float_lvar 5@ -= 8@
+{35622} set_lvar_float_to_lvar_float 15@ = 5@
+
+:Noname_35630
+{35630} if and
+{35634}   is_float_lvar_greater_than_float_lvar 2@ > 0@
+{35642}   not is_float_lvar_greater_or_equal_to_float_lvar 3@ >= 1@
+{35650} goto_if_false @Noname_35683
+{35657} 5@ *= -1.0
+{35667} sub_float_lvar_from_float_lvar 5@ -= 7@
+{35675} set_lvar_float_to_lvar_float 15@ = 5@
+
+:Noname_35683
+{35683} if and
+{35687}   not is_float_lvar_greater_or_equal_to_float_lvar 2@ >= 0@
+{35695}   is_float_lvar_greater_than_float_lvar 3@ > 1@
+{35703} goto_if_false @Noname_35726
+{35710} add_float_lvar_to_float_lvar 4@ += 9@
+{35718} set_lvar_float_to_lvar_float 15@ = 4@
+
+:Noname_35726
+{35726} if and
+{35730}   not is_float_lvar_greater_or_equal_to_float_lvar 2@ >= 0@
+{35738}   not is_float_lvar_greater_or_equal_to_float_lvar 3@ >= 1@
+{35746} goto_if_false @Noname_35779
+{35753} 4@ *= -1.0
+{35763} sub_float_lvar_from_float_lvar 4@ -= 10@
+{35771} set_lvar_float_to_lvar_float 15@ = 4@
+
+:Noname_35779
+{35779} 11@ = read_memory 11989592 {size} 4 {vp} False
+{35793} sub_float_lvar_from_float_lvar 11@ -= 15@
+{35801} if and
+{35805}   11@ < 6.0
+{35815}   11@ > -6.0
+{35825} goto_if_false @Noname_35841
+{35832}   is_pc_version 
+{35834} goto @Noname_35843
+
+:Noname_35841
+{35841}   is_australian_game 
+
+:Noname_35843
+{35843} cleo_return 1 {retParams} 15@ 
+
+:Noname_35851
+{35851} 0@ = get_ped_pointer $scplayer
+{35859} 0@ += 1816
+{35867} 1@ = read_memory 0@ {size} 1 {vp} False
+{35879} if or
+{35883}   1@ == 2
+{35890}   1@ == 3
+{35897}   1@ == 4
+{35904}   1@ == 5
+{35911}   1@ == 6
+{35918}   1@ == 7
+{35925} goto_if_false @Noname_35941
+{35932}   is_pc_version 
+{35934} goto @Noname_35943
+
+:Noname_35941
+{35941}   is_australian_game 
+
+:Noname_35943
+{35943} cleo_return 1 {retParams} 1@ 
+
+:Noname_35951
+{35951} nop 
+
+:Noname_35953
+{35953} wait 0
+{35957}   samp_is_available 
+{35959} goto_if_false @Noname_35953
+
+:Noname_35966
+{35966} wait 0
+{35970} get_cleo_shared_var 18 {var_result} 31@
+{35977} if 
+{35981}   31@ == 1337
+{35989} goto_if_false @Noname_36003
+{35996} goto @Noname_36010
+
+:Noname_36003
+{36003} goto @Noname_35966
+
+:Noname_36010
+{36010}   samp_raknet_hook_outcoming_packet @Noname_36669
+
+:Noname_36017
+{36017} wait 0
+{36021} get_cleo_shared_var 53 {var_result} 31@
+{36028} get_cleo_shared_var 23 {var_result} 30@
+{36035} if and
+{36039}   30@ == 6969
+{36047}   31@ == 1
+{36054} goto_if_false @Noname_36465
+{36061} if 
+{36065}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{36071} goto_if_false @Noname_36465
+{36078} if 
+{36082} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{36092} goto_if_false @Noname_36459
+{36099} if 
+{36103} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 1@ 2@ 3@ 
+{36125} goto_if_false @Noname_36446
+{36132} if 
+{36136}   does_char_exist 30@
+{36141} goto_if_false @Noname_36439
+{36148} set_cleo_shared_var 22 {value} 1
+{36154} cleo_call @Noname_22388 {numArgs} 2 {args} $scplayer 22 4@ 5@ 6@ 
+{36178} cleo_call @Noname_36472 {numArgs} 6 {args} 4@ 5@ 6@ 1@ 2@ 3@ 7@ 8@ 9@ 10@ 11@ 12@ 
+{36224} get_cleo_shared_var 77 {var_result} 31@
+{36231} if 
+{36235}   31@ == 1
+{36242} goto_if_false @Noname_36378
+{36249}   29@ = allocate_memory 32
+{36256} 28@ = samp_get_player_id $scplayer
+{36264}   29@ = samp_store_player_aim_data 28@
+{36272}   sf_write_memory_with_offset 29@ {offset} 1 {size} 4 {value} 10@
+{36284}   sf_write_memory_with_offset 29@ {offset} 5 {size} 4 {value} 11@
+{36296}   sf_write_memory_with_offset 29@ {offset} 9 {size} 4 {value} 12@
+{36308}   sf_write_memory_with_offset 29@ {offset} 13 {size} 4 {value} 7@
+{36320}   sf_write_memory_with_offset 29@ {offset} 17 {size} 4 {value} 8@
+{36332}   sf_write_memory_with_offset 29@ {offset} 21 {size} 4 {value} 9@
+{36344} samp_send_aim_data 29@
+{36349} free_memory 29@
+{36354} add_float_lvar_to_float_lvar 10@ += 7@
+{36362} add_float_lvar_to_float_lvar 11@ += 8@
+{36370} add_float_lvar_to_float_lvar 12@ += 9@
+
+:Noname_36378
+{36378} set_cleo_shared_var 22 {value} 1
+{36384} get_cleo_shared_var 77 {var_result} 31@
+{36391} if and
+{36395}   31@ == 0
+{36402}   is_char_shooting $scplayer
+{36407} goto_if_false @Noname_36439
+{36414} 31@ = samp_get_player_id 30@
+{36422} cleo_call @Noname_36894 {numArgs} 1 {args} 31@ 
+{36435} wait 40
+
+:Noname_36439
+{36439} goto @Noname_36452
+
+:Noname_36446
+{36446} set_cleo_shared_var 22 {value} 0
+
+:Noname_36452
+{36452} goto @Noname_36465
+
+:Noname_36459
+{36459} set_cleo_shared_var 22 {value} 0
+
+:Noname_36465
+{36465} goto @Noname_36017
+
+:Noname_36472
+{36472} cleo_call @Noname_20856 {numArgs} 4 {args} 0@ 1@ 3@ 4@ 6@ 
+{36497} cleo_call @Noname_20812 {numArgs} 6 {args} 0@ 1@ 2@ 3@ 4@ 5@ 7@ 
+{36528} 7@ -= 90.0
+{36538} 6@ += 90.0
+{36548} if and
+{36552}   not is_current_char_weapon $scplayer {weaponType} WeaponType.Sniper
+{36559}   not is_current_char_weapon $scplayer {weaponType} WeaponType.Minigun
+{36566} goto_if_false @Noname_36583
+{36573} 7@ += 20.0
+
+:Noname_36583
+{36583} cleo_call @Noname_40849 {numArgs} 6 {args} 3@ 4@ 5@ 6@ 7@ 1.0 8@ 9@ 10@ 
+{36622} sub_float_lvar_from_float_lvar 3@ -= 8@
+{36630} sub_float_lvar_from_float_lvar 4@ -= 9@
+{36638} sub_float_lvar_from_float_lvar 5@ -= 10@
+{36646} cleo_return 6 {retParams} 8@ 9@ 10@ 3@ 4@ 5@ 
+
+:Noname_36669
+{36669}   12@ = samp_raknet_hook_get_param SampRakNetHookParam.PacketId
+{36676}   13@ = samp_raknet_hook_get_param SampRakNetHookParam.Bitstream
+{36683} if 
+{36687}   12@ == 203
+{36695} goto_if_false @Noname_36773
+{36702} if 
+{36706}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{36712} goto_if_false @Noname_36773
+{36719} get_cleo_shared_var 53 {var_result} 13@
+{36726} if 
+{36730}   13@ == 1
+{36737} goto_if_false @Noname_36773
+{36744} get_cleo_shared_var 22 {var_result} 13@
+{36751} if 
+{36755}   13@ == 1
+{36762} goto_if_false @Noname_36773
+{36769} samp_raknet_hook_return False
+
+:Noname_36773
+{36773} if 
+{36777}   12@ == 206
+{36785} goto_if_false @Noname_36877
+{36792} if 
+{36796}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{36802} goto_if_false @Noname_36877
+{36809} get_cleo_shared_var 77 {var_result} 13@
+{36816} get_cleo_shared_var 53 {var_result} 12@
+{36823} if and
+{36827}   12@ == 1
+{36834}   13@ == 0
+{36841} goto_if_false @Noname_36877
+{36848} get_cleo_shared_var 22 {var_result} 13@
+{36855} if 
+{36859}   13@ == 1
+{36866} goto_if_false @Noname_36877
+{36873} samp_raknet_hook_return False
+
+:Noname_36877
+{36877} samp_raknet_hook_return True
+{36881} cleo_call @Noname_36894 {numArgs} 1 {args} 28@ 
+
+:Noname_36894
+{36894} if 
+{36898} samp_get_player_char_by_id 0@ {number} 7@
+{36906} goto_if_false @Noname_37309
+{36913} set_lvar_int_to_lvar_int 31@ = 0@
+{36921} cleo_call @Noname_22388 {numArgs} 2 {args} $scplayer 24 1@ 2@ 3@ 
+{36945} cleo_call @Noname_22388 {numArgs} 2 {args} 7@ 3 4@ 5@ 6@ 
+{36969} if 
+{36973}   is_line_of_sight_clear 1@ {fromY} 2@ {fromZ} 3@ {toX} 4@ {toY} 5@ {toZ} 6@ {buildings} True {cars} True {chars} False {objects} True {particles} False
+{37003} goto_if_false @Noname_37062
+{37010} 18@ = generate_random_float_in_range 0.001 {max} 0.0025
+{37025} 19@ = generate_random_float_in_range -0.001 {max} 0.001
+{37040} 20@ = generate_random_float_in_range 0.001 {max} 0.0025
+{37055} goto @Noname_37107
+
+:Noname_37062
+{37062} 18@ = generate_random_float_in_range -0.0105 {max} -0.0099
+{37077} 19@ = generate_random_float_in_range 0.1964 {max} 0.1852
+{37092} 20@ = generate_random_float_in_range 0.694 {max} 0.63
+
+:Noname_37107
+{37107}   7@ = allocate_memory 39
+{37114}   sf_write_memory_with_offset 7@ {offset} 0 {size} 1 {value} 1
+{37125}   sf_write_memory_with_offset 7@ {offset} 1 {size} 2 {value} 0@
+{37137}   sf_write_memory_with_offset 7@ {offset} 3 {size} 4 {value} 1@
+{37149}   sf_write_memory_with_offset 7@ {offset} 7 {size} 4 {value} 2@
+{37161}   sf_write_memory_with_offset 7@ {offset} 11 {size} 4 {value} 3@
+{37173}   sf_write_memory_with_offset 7@ {offset} 15 {size} 4 {value} 4@
+{37185}   sf_write_memory_with_offset 7@ {offset} 19 {size} 4 {value} 5@
+{37197}   sf_write_memory_with_offset 7@ {offset} 23 {size} 4 {value} 6@
+{37209}   sf_write_memory_with_offset 7@ {offset} 27 {size} 4 {value} 18@
+{37221}   sf_write_memory_with_offset 7@ {offset} 31 {size} 4 {value} 19@
+{37233}   sf_write_memory_with_offset 7@ {offset} 35 {size} 4 {value} 20@
+{37245} 19@ = get_current_char_weapon $scplayer
+{37253}   sf_write_memory_with_offset 7@ {offset} 39 {size} 1 {value} 19@
+{37265} samp_send_bullet_data 7@
+{37270} free_memory 7@
+{37275} 7@ = get_current_char_weapon $scplayer
+{37283} cleo_call @Noname_37314 {numArgs} 0 {args} 8@ 
+{37296} samp_send_give_damage 31@ {floatDamage} 8@ {weapon} 7@ {bodyPart} BodyPart.Shoes
+
+:Noname_37309
+{37309} cleo_return 0 {retParams} 
+
+:Noname_37314
+{37314} 2@ = get_ped_pointer $scplayer
+{37322} 2@ += 1836
+{37330} 2@ = read_memory 2@ {size} 1 {vp} False
+{37342} 0@ = get_current_char_weapon $scplayer
+{37350} set_lvar_int_to_lvar_int 1@ = 0@
+{37358} if 
+{37362}   2@ == 2
+{37369} goto_if_false @Noname_37383
+{37376} 1@ += 25
+
+:Noname_37383
+{37383} if 
+{37387}   2@ == 3
+{37394} goto_if_false @Noname_37408
+{37401} 1@ += 36
+
+:Noname_37408
+{37408} 1@ *= 112
+{37415} 1@ += 13150904
+{37425} 1@ += 34
+{37432} 1@ = read_memory 1@ {size} 2 {vp} False
+{37444} cset_lvar_float_to_lvar_int 1@ =# 1@
+{37452} if and
+{37456}   0@ >= 22
+{37463}   0@ <= 34
+{37470} goto_if_false @Noname_37487
+{37477} 1@ /= 3.0435
+
+:Noname_37487
+{37487} cleo_return 1 {retParams} 1@ 
+
+:Noname_37495
+{37495} get_cleo_shared_var 78 {var_result} 31@
+{37502} if and
+{37506}   does_file_exist "CLEO\DynamicVars.cleo"
+{37531}   31@ == 1
+{37538} goto_if_false @Noname_37618
+{37545} 0FAA: 
+{37547} if 
+{37551}   samp_is_remote_player_connected 0@
+{37556} goto_if_false @Noname_37609
+{37563} 1@ = samp_get_player_nickname 0@
+{37571} 0FA4: 
+{37573} if 
+{37577}   2@ == 1
+{37584} goto_if_false @Noname_37600
+{37591}   is_pc_version 
+{37593} goto @Noname_37602
+
+:Noname_37600
+{37600}   is_australian_game 
+
+:Noname_37602
+{37602} goto @Noname_37611
+
+:Noname_37609
+{37609}   is_australian_game 
+
+:Noname_37611
+{37611} goto @Noname_37620
+
+:Noname_37618
+{37618}   is_australian_game 
+
+:Noname_37620
+{37620} cleo_return 0 {retParams} 
+
+:Noname_37625
+{37625} nop 
+
+:Noname_37627
+{37627} wait 0
+{37631}   samp_is_available 
+{37633} goto_if_false @Noname_37627
+{37640} if 
+{37644}   does_file_exist "CLEO\DynamicVars.cleo"
+{37669} goto_if_false @Noname_37678
+{37676} 0FAA: 
+
+:Noname_37678
+{37678}   samp_hook_chat_command_as_local ".ADDFRIEND" {callback} @Noname_38257
+{37697}   samp_hook_chat_command_as_local ".DELFRIEND" {callback} @Noname_38588
+{37716}   samp_hook_chat_command_as_local ".FRIENDS" {callback} @Noname_38047
+
+:Noname_37733
+{37733} wait 0
+{37737} get_cleo_shared_var 74 {var_result} 0@
+{37744} get_cleo_shared_var 73 {var_result} 1@
+{37751} if or
+{37755}   1@ == 1
+{37762}   0@ == 1
+{37769} goto_if_false @Noname_38040
+{37776} if 
+{37780}   does_file_exist "CLEO\DynamicVars.cleo"
+{37805} goto_if_false @Noname_38040
+{37812} 1@ = 0
+
+:Noname_37819
+{37819} if 
+{37823}   samp_is_remote_player_connected 1@
+{37828} goto_if_false @Noname_38018
+{37835} 2@ = samp_get_player_nickname 1@
+{37843} 0FA4: 
+{37845} if 
+{37849}   3@ == 1
+{37856} goto_if_false @Noname_37944
+{37863} if 
+{37867} samp_get_player_char_by_id 1@ {number} 4@
+{37875} goto_if_false @Noname_37937
+{37882} get_cleo_shared_var 74 {var_result} 0@
+{37889} if 
+{37893}   0@ == 1
+{37900} goto_if_false @Noname_37937
+{37907} 5@ = get_ped_pointer 4@
+{37915} 5@ += 300
+{37923} write_memory 5@ {size} 4 {value} 6.0 {vp} False
+
+:Noname_37937
+{37937} goto @Noname_38018
+
+:Noname_37944
+{37944} if 
+{37948} samp_get_player_char_by_id 1@ {number} 4@
+{37956} goto_if_false @Noname_38018
+{37963} get_cleo_shared_var 73 {var_result} 0@
+{37970} if 
+{37974}   0@ == 1
+{37981} goto_if_false @Noname_38018
+{37988} 5@ = get_ped_pointer 4@
+{37996} 5@ += 300
+{38004} write_memory 5@ {size} 4 {value} -6.0 {vp} False
+
+:Noname_38018
+{38018} 1@ += 1
+{38025}   1@ > 1000
+{38033} goto_if_false @Noname_37819
+
+:Noname_38040
+{38040} goto @Noname_37733
+
+:Noname_38047
+{38047} if 
+{38051}   does_file_exist "CLEO\DynamicVars.cleo"
+{38076} goto_if_false @Noname_38255
+{38083} samp_add_message_to_chat "{FF0000}FriendSystem: {FFFFFF} here are all your friends:" {color} -1
+{38147} 31@ = 0
+
+:Noname_38154
+{38154} if 
+{38158}   samp_is_remote_player_connected 31@
+{38163} goto_if_false @Noname_38233
+{38170} 29@ = samp_get_player_nickname 31@
+{38178} 0FA4: 
+{38180} if 
+{38184}   28@ == 1
+{38191} goto_if_false @Noname_38233
+{38198} samp_add_message_to_chat "{FF0000}Name: {FFFFFF} %s" {color} -1 {args} 29@ 
+
+:Noname_38233
+{38233} 31@ += 1
+{38240}   31@ > 1000
+{38248} goto_if_false @Noname_38154
+
+:Noname_38255
+{38255} sf_command_return 
+
+:Noname_38257
+{38257} print_formatted_now "~r~.addfriend: ~w~this function is not working anymore!" {time} 1000
+{38320} if 
+{38324}   does_file_exist "CLEO\DynamicVars.cleo"
+{38349} goto_if_false @Noname_38586
+{38356}   31@ = sf_get_params_of_last_triggered_command 
+{38361} if 
+{38365}   scan_string 31@ {format} "%d" {var_nValues} TIMERB {var_values} 30@ 
+{38381} goto_if_false @Noname_38536
+{38388} if 
+{38392}   samp_is_remote_player_connected 30@
+{38397} goto_if_false @Noname_38474
+{38404} 29@ = samp_get_player_nickname 30@
+{38412} 0FA3: 
+{38414} print_formatted_now "~r~.addfriend: ~w~Added a new Friend: %s" {time} 1500 {args} 29@ 
+{38465} 0FA9: 
+{38467} goto @Noname_38529
+
+:Noname_38474
+{38474} print_formatted_now "~r~.addfriend: ~w~This player is not connected!" {time} 1000
+
+:Noname_38529
+{38529} goto @Noname_38586
+
+:Noname_38536
+{38536} print_formatted_now "~r~.addfriend: ~w~You did not enter an ID!" {time} 1000
+
+:Noname_38586
+{38586} sf_command_return 
+
+:Noname_38588
+{38588} print_formatted_now "~r~.delfriend: ~w~this function is not working anymore!" {time} 1000
+{38651} if 
+{38655}   does_file_exist "CLEO\DynamicVars.cleo"
+{38680} goto_if_false @Noname_38925
+{38687}   31@ = sf_get_params_of_last_triggered_command 
+{38692} if 
+{38696}   scan_string 31@ {format} "%d" {var_nValues} TIMERB {var_values} 30@ 
+{38712} goto_if_false @Noname_38875
+{38719} if 
+{38723}   samp_is_remote_player_connected 30@
+{38728} goto_if_false @Noname_38813
+{38735} 29@ = samp_get_player_nickname 30@
+{38743} 0FA3: 
+{38745} print_formatted_now "~r~.delfriend: ~w~deleted a friend from list: %s" {time} 1500 {args} 29@ 
+{38804} 0FA9: 
+{38806} goto @Noname_38868
+
+:Noname_38813
+{38813} print_formatted_now "~r~.delfriend: ~w~This player is not connected!" {time} 1000
+
+:Noname_38868
+{38868} goto @Noname_38925
+
+:Noname_38875
+{38875} print_formatted_now "~r~.delfriend: ~w~You did not enter an ID!" {time} 1000
+
+:Noname_38925
+{38925} sf_command_return 
+
+:Noname_38927
+{38927} nop 
+
+:Noname_38929
+{38929} wait 0
+{38933}   samp_is_available 
+{38935} goto_if_false @Noname_38929
+
+:Noname_38942
+{38942} wait 0
+{38946} get_cleo_shared_var 18 {var_result} 31@
+{38953} if 
+{38957}   31@ == 1337
+{38965} goto_if_false @Noname_38979
+{38972} goto @Noname_38986
+
+:Noname_38979
+{38979} goto @Noname_38942
+
+:Noname_38986
+{38986} wait 0
+{38990} get_cleo_shared_var 52 {var_result} 31@
+{38997} if 
+{39001}   31@ == 1
+{39008} goto_if_false @Noname_39138
+{39015} if 
+{39019}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{39025} goto_if_false @Noname_39138
+{39032} if 
+{39036} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 1@ 2@ 3@ 
+{39058} goto_if_false @Noname_39138
+{39065} if 
+{39069}   does_char_exist 30@
+{39074} goto_if_false @Noname_39138
+{39081} 31@ = get_current_char_weapon $scplayer
+{39089} if and
+{39093}   not is_char_dead 30@
+{39098}   31@ < 35
+{39105}   31@ > 21
+{39112} goto_if_false @Noname_39138
+{39119} cleo_call @Noname_39145 {numArgs} 3 {args} 1@ 2@ 3@ 
+
+:Noname_39138
+{39138} goto @Noname_38986
+
+:Noname_39145
+{39145} 31@ = get_current_char_weapon $scplayer
+{39153} if 
+{39157}   31@ > 21
+{39164} goto_if_false @Noname_39257
+{39171} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 339.0 {gameScreenCoordY} 178.5
+{39189} if 
+{39193}   31@ < 34
+{39200} goto_if_false @Noname_39232
+{39207} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 339.0 {gameScreenCoordY} 178.5
+{39225} goto @Noname_39250
+
+:Noname_39232
+{39232} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 320.0 {gameScreenCoordY} 224.5
+
+:Noname_39250
+{39250} goto @Noname_39275
+
+:Noname_39257
+{39257} 10@, 11@ = sf_game_screen_coords_to_window_screen_coords 320.0 {gameScreenCoordY} 224.5
+
+:Noname_39275
+{39275}   3@, 4@ = sf_world_coords_to_window_screen_coords 0@ {worldCoordY} 1@ {worldCoordZ} 2@
+{39292} 5@ = 1
+{39299} cset_lvar_float_to_lvar_int 3@ =# 3@
+{39307} cset_lvar_float_to_lvar_int 4@ =# 4@
+{39315} cset_lvar_float_to_lvar_int 10@ =# 10@
+{39323} cset_lvar_float_to_lvar_int 11@ =# 11@
+{39331} 17@ = get_distance_between_coords_2d 3@ {fromY} 0.0 {toX} 10@ {toZ} 0.0
+{39352} if 
+{39356}   17@ > 5.0
+{39366} goto_if_false @Noname_39512
+{39373} cset_lvar_int_to_lvar_float 3@ =# 3@
+{39381} cset_lvar_int_to_lvar_float 4@ =# 4@
+{39389} cset_lvar_int_to_lvar_float 10@ =# 10@
+{39397} cset_lvar_int_to_lvar_float 11@ =# 11@
+{39405} 3@ += 2
+{39412} if and
+{39416}   5@ == 1
+{39423}   is_int_lvar_greater_than_int_lvar 10@ > 3@
+{39431} goto_if_false @Noname_39455
+{39438} 0@ = 0
+{39445} cleo_call @Noname_39593 {numArgs} 0 {args} 
+
+:Noname_39455
+{39455} 3@ += 2
+{39462} 3@ -= 2
+{39469} if and
+{39473}   5@ == 1
+{39480}   not is_int_lvar_greater_than_int_lvar 10@ > 3@
+{39488} goto_if_false @Noname_39512
+{39495} 0@ = 0
+{39502} cleo_call @Noname_39517 {numArgs} 0 {args} 
+
+:Noname_39512
+{39512} cleo_return 0 {retParams} 
+
+:Noname_39517
+{39517}   31@ = load_dynamic_library "user32.dll"
+{39534}   30@ = get_dynamic_library_procedure "mouse_event" {self} 31@
+{39555} get_cleo_shared_var 7 {var_result} 5@
+{39562} call_function 30@ {numArgs} 5 {pop} 0 {args} 0 0 0 5@ 0 
+{39583} free_dynamic_library 31@
+{39588} cleo_return 0 {retParams} 
+
+:Noname_39593
+{39593}   31@ = load_dynamic_library "user32.dll"
+{39610}   30@ = get_dynamic_library_procedure "mouse_event" {self} 31@
+{39631} get_cleo_shared_var 7 {var_result} 5@
+{39638} 5@ *= -1
+{39645} call_function 30@ {numArgs} 5 {pop} 0 {args} 0 0 0 5@ 0 
+{39666} free_dynamic_library 31@
+{39671} cleo_return 0 {retParams} 
+
+:Noname_39676
+{39676} nop 
+
+:Noname_39678
+{39678} wait 0
+{39682}   samp_is_available 
+{39684} goto_if_false @Noname_39678
+
+:Noname_39691
+{39691} wait 0
+{39695} get_cleo_shared_var 18 {var_result} 31@
+{39702} if 
+{39706}   31@ == 1337
+{39714} goto_if_false @Noname_39728
+{39721} goto @Noname_39735
+
+:Noname_39728
+{39728} goto @Noname_39691
+
+:Noname_39735
+{39735} wait 0
+{39739} get_cleo_shared_var 51 {var_result} 31@
+{39746} if 
+{39750}   31@ == 1
+{39757} goto_if_false @Noname_40430
+{39764} if 
+{39768}   is_button_pressed PadId.Pad1 {buttonId} Button.RightShoulder1
+{39774} goto_if_false @Noname_40430
+{39781} if 
+{39785} cleo_call @Noname_30059 {numArgs} 0 {args} 
+{39795} goto_if_false @Noname_40430
+{39802} if 
+{39806} cleo_call @Noname_40961 {numArgs} 0 {args} 30@ 16@ 17@ 18@ 
+{39828} goto_if_false @Noname_40430
+{39835} if 
+{39839}   does_char_exist 30@
+{39844} goto_if_false @Noname_40430
+{39851} 29@ = samp_get_player_id 30@
+{39859} cleo_call @Noname_30626 {numArgs} 1 {args} 30@ 16@ 17@ 18@ 
+{39881} cleo_call @Noname_22388 {numArgs} 2 {args} 30@ 1 2@ 3@ 4@ 
+{39905} cleo_call @Noname_22388 {numArgs} 2 {args} 30@ 6 5@ 6@ 7@ 
+{39929} get_cleo_shared_var 77 {var_result} 31@
+{39936} if 
+{39940}   31@ == 1
+{39947} goto_if_false @Noname_40009
+{39954} add_float_lvar_to_float_lvar 2@ += 16@
+{39962} add_float_lvar_to_float_lvar 3@ += 17@
+{39970} add_float_lvar_to_float_lvar 4@ += 18@
+{39978} add_float_lvar_to_float_lvar 5@ += 16@
+{39986} add_float_lvar_to_float_lvar 6@ += 17@
+{39994} add_float_lvar_to_float_lvar 7@ += 18@
+{40002} goto @Noname_40079
+
+:Noname_40009
+{40009} cleo_call @Noname_30275 {numArgs} 1 {args} 30@ 16@ 17@ 18@ 
+{40031} add_float_lvar_to_float_lvar 2@ += 16@
+{40039} add_float_lvar_to_float_lvar 3@ += 17@
+{40047} add_float_lvar_to_float_lvar 4@ += 18@
+{40055} add_float_lvar_to_float_lvar 5@ += 16@
+{40063} add_float_lvar_to_float_lvar 6@ += 17@
+{40071} add_float_lvar_to_float_lvar 7@ += 18@
+
+:Noname_40079
+{40079} cleo_call @Noname_30108 {numArgs} 3 {args} 2@ 3@ 4@ 2@ 3@ 
+{40104} cleo_call @Noname_30108 {numArgs} 3 {args} 5@ 6@ 7@ 4@ 5@ 
+{40129} use_text_commands True
+{40133} 6@ = get_distance_between_coords_2d 2@ {fromY} 3@ {toX} 4@ {toZ} 5@
+{40150} set_lvar_float_to_lvar_float 7@ = 6@
+{40158} get_cleo_shared_var 77 {var_result} 31@
+{40165} if 
+{40169}   31@ == 1
+{40176} goto_if_false @Noname_40310
+{40183} 6@ /= 6.5
+{40193} 7@ *= 2.15
+{40203} cleo_call @Noname_30991 {numArgs} 0 {args} 15@ 14@ 
+{40219} 15@, 14@ = sf_window_screen_coords_to_game_screen_coords 15@ {windowScreenCoordY} 14@
+{40233} if 
+{40237}   do_2d_rectangles_collide 15@ {rectangle1PositionY} 14@ {rectangle1SizeX} 1.0 {rectangle1SizeY} 1.0 {rectangle2PositionX} 2@ {rectangle2PositionY} 3@ {rectangle2SizeX} 6@ {rectangle2SizeY} 7@
+{40267} goto_if_false @Noname_40303
+{40274} 8@ = 12006488
+{40284} 8@ += 34
+{40291} write_memory 8@ {size} 1 {value} 255 {vp} False
+
+:Noname_40303
+{40303} goto @Noname_40430
+
+:Noname_40310
+{40310} 6@ /= 3.0
+{40320} 7@ *= 2.15
+{40330} cleo_call @Noname_30991 {numArgs} 0 {args} 15@ 14@ 
+{40346} 15@, 14@ = sf_window_screen_coords_to_game_screen_coords 15@ {windowScreenCoordY} 14@
+{40360} if 
+{40364}   do_2d_rectangles_collide 15@ {rectangle1PositionY} 14@ {rectangle1SizeX} 1.0 {rectangle1SizeY} 1.0 {rectangle2PositionX} 2@ {rectangle2PositionY} 3@ {rectangle2SizeX} 6@ {rectangle2SizeY} 7@
+{40394} goto_if_false @Noname_40430
+{40401} 8@ = 12006488
+{40411} 8@ += 34
+{40418} write_memory 8@ {size} 1 {value} 255 {vp} False
+
+:Noname_40430
+{40430} goto @Noname_39735
+{40437} 25@, 24@, 23@ = get_active_camera_coordinates 
+{40448} if 
+{40452}   is_line_of_sight_clear 25@ {fromY} 24@ {fromZ} 23@ {toX} 0@ {toY} 1@ {toZ} 2@ {buildings} True {cars} False {chars} False {objects} True {particles} False
+{40482} goto_if_false @Noname_40496
+{40489}   is_pc_version 
+{40491} cleo_return 0 {retParams} 
+
+:Noname_40496
+{40496}   is_australian_game 
+{40498} cleo_return 0 {retParams} 
+
+:Noname_40503
+{40503} nop 
+
+:Noname_40505
+{40505} wait 0
+{40509} 1@ = 255
+{40517} 2@ = 0
+{40524} 3@ = 0
+{40531} 3@ = 0
+
+:Noname_40538
+{40538} wait 0
+{40542} gosub @Noname_40823
+{40549} 3@ += 1
+{40556}   3@ > 255
+{40564} goto_if_false @Noname_40538
+{40571} 3@ = 255
+{40579} 1@ = 255
+
+:Noname_40587
+{40587} wait 0
+{40591} gosub @Noname_40823
+{40598} 1@ -= 1
+{40605}   0 > 1@
+{40612} goto_if_false @Noname_40587
+{40619} 1@ = 0
+{40626} 2@ = 0
+
+:Noname_40633
+{40633} wait 0
+{40637} gosub @Noname_40823
+{40644} 2@ += 1
+{40651}   2@ > 255
+{40659} goto_if_false @Noname_40633
+{40666} 2@ = 255
+{40674} 3@ = 255
+
+:Noname_40682
+{40682} wait 0
+{40686} gosub @Noname_40823
+{40693} 3@ -= 1
+{40700}   0 > 3@
+{40707} goto_if_false @Noname_40682
+{40714} 3@ = 0
+{40721} 1@ = 0
+
+:Noname_40728
+{40728} wait 0
+{40732} gosub @Noname_40823
+{40739} 1@ += 1
+{40746}   1@ > 255
+{40754} goto_if_false @Noname_40728
+{40761} 1@ = 255
+{40769} 2@ = 255
+
+:Noname_40777
+{40777} wait 0
+{40781} gosub @Noname_40823
+{40788} 2@ -= 1
+{40795}   0 > 2@
+{40802} goto_if_false @Noname_40777
+{40809} 2@ = 0
+{40816} goto @Noname_40505
+
+:Noname_40823
+{40823} 4@ = sf_argb_to_hex 255 {red} 1@ {green} 2@ {blue} 3@
+{40840} set_cleo_shared_var 49 {value} 4@
+{40847} return 
+
+:Noname_40849
+{40849} 3@ *= -1.0
+{40859} 6@ = sin 3@
+{40867} mult_float_lvar_by_float_lvar 6@ *= 5@
+{40875} add_float_lvar_to_float_lvar 0@ += 6@
+{40883} 6@ = cos 3@
+{40891} mult_float_lvar_by_float_lvar 6@ *= 5@
+{40899} add_float_lvar_to_float_lvar 1@ += 6@
+{40907} 6@ = cos 4@
+{40915} div_float_lvar_by_float_lvar 5@ /= 6@
+{40923} 6@ = sin 4@
+{40931} mult_float_lvar_by_float_lvar 5@ *= 6@
+{40939} add_float_lvar_to_float_lvar 2@ += 5@
+{40947} cleo_return 3 {retParams} 0@ 1@ 2@ 
+
+:Noname_40961
+{40961} get_cleo_shared_var 10 {var_result} 0@
+{40968} 1@ = -1
+{40975} 2@ = 0.0
+{40985} 3@ = 0.0
+{40995} 4@ = 0.0
+{41005} 31@ = 0
+
+:Noname_41012
+{41012} if 
+{41016}   samp_is_remote_player_connected 31@
+{41021} goto_if_false @Noname_42025
+{41028} if 
+{41032} samp_get_player_char_by_id 31@ {number} 30@
+{41040} goto_if_false @Noname_42025
+{41047} 28@ = 1
+{41054} get_cleo_shared_var 82 {var_result} 29@
+{41061} if 
+{41065}   29@ == 1
+{41072} goto_if_false @Noname_41143
+{41079} 27@ = samp_get_player_color 31@
+{41087} 26@ = samp_get_player_id $scplayer
+{41095} 25@ = samp_get_player_color 26@
+{41103} if 
+{41107}   is_int_lvar_equal_to_int_lvar 25@ == 27@
+{41115} goto_if_false @Noname_41136
+{41122} 28@ = 0
+{41129} goto @Noname_41143
+
+:Noname_41136
+{41136} 28@ = 1
+
+:Noname_41143
+{41143} if and
+{41147}   28@ == 1
+{41154}   not samp_is_player_npc 31@
+{41159}   not samp_is_player_paused 31@
+{41164} goto_if_false @Noname_42025
+{41171} if 
+{41175}   is_char_on_screen 30@
+{41180} goto_if_false @Noname_42025
+{41187} 29@ = get_current_char_weapon $scplayer
+{41195} 29@ += 36
+{41202} 29@ *= 112
+{41209} 29@ += 13150904
+{41219} 29@ += 8
+{41226} 28@ = read_memory 29@ {size} 4 {vp} False
+{41238} 28@ = 300.0
+{41248} 27@, 26@, 25@ = get_active_camera_coordinates 
+{41259} cleo_call @Noname_22388 {numArgs} 2 {args} 30@ 6 24@ 23@ 22@ 
+{41283} get_cleo_shared_var 77 {var_result} 6@
+{41290} if and
+{41294}   not is_char_dead 30@
+{41299}   6@ == 1
+{41306} goto_if_false @Noname_41359
+{41313} cleo_call @Noname_30626 {numArgs} 1 {args} 30@ 7@ 8@ 9@ 
+{41335} add_float_lvar_to_float_lvar 24@ += 7@
+{41343} add_float_lvar_to_float_lvar 23@ += 8@
+{41351} add_float_lvar_to_float_lvar 22@ += 9@
+
+:Noname_41359
+{41359} 21@ = get_distance_between_coords_3d 27@ {fromY} 26@ {fromZ} 25@ {toX} 24@ {toY} 23@ {toZ} 22@
+{41382} if and
+{41386}   not is_char_dead 30@
+{41391}   is_float_lvar_greater_or_equal_to_float_lvar 28@ >= 21@
+{41399} goto_if_false @Noname_42025
+{41406} if 
+{41410}   is_char_in_any_car 30@
+{41415} goto_if_false @Noname_41436
+{41422} 20@ = 0
+{41429} goto @Noname_41443
+
+:Noname_41436
+{41436} 20@ = 1
+
+:Noname_41443
+{41443} get_cleo_shared_var 61 {var_result} 19@
+{41450} if or
+{41454}   19@ == 1
+{41461}   is_line_of_sight_clear 27@ {fromY} 26@ {fromZ} 25@ {toX} 24@ {toY} 23@ {toZ} 22@ {buildings} True {cars} 20@ {chars} False {objects} True {particles} False
+{41492} goto_if_false @Noname_42025
+{41499} cleo_call @Noname_20812 {numArgs} 6 {args} 24@ 23@ 22@ 27@ 26@ 25@ 19@ 
+{41530} cleo_call @Noname_20856 {numArgs} 4 {args} 24@ 23@ 27@ 26@ 18@ 
+{41555} 19@ -= 270.0
+{41565} 18@ -= 90.0
+{41575} 19@ = sf_degrees_to_radians 19@
+{41583} 18@ = sf_degrees_to_radians 18@
+{41591} 19@ -= 0.0778
+{41601} 18@ += 0.0425
+{41611} 17@ = read_memory 11989576 {size} 4 {vp} False
+{41625} 16@ = read_memory 11989592 {size} 4 {vp} False
+{41639} sub_float_lvar_from_float_lvar 19@ -= 17@
+{41647} sub_float_lvar_from_float_lvar 18@ -= 16@
+{41655} if 
+{41659}   19@ > 3.1416
+{41669} goto_if_false @Noname_41686
+{41676} 19@ -= 6.2832
+
+:Noname_41686
+{41686} if 
+{41690}   19@ < -3.1416
+{41700} goto_if_false @Noname_41717
+{41707} 19@ += 6.2832
+
+:Noname_41717
+{41717} if 
+{41721}   18@ > 3.1416
+{41731} goto_if_false @Noname_41748
+{41738} 18@ -= 6.2832
+
+:Noname_41748
+{41748} if 
+{41752}   18@ < -3.1416
+{41762} goto_if_false @Noname_41779
+{41769} 18@ += 6.2832
+
+:Noname_41779
+{41779} if and
+{41783}   19@ < 0.5
+{41793}   19@ > -0.5
+{41803}   18@ < 0.5
+{41813}   18@ > -0.5
+{41823} goto_if_false @Noname_42025
+{41830} cleo_call @Noname_30991 {numArgs} 0 {args} 15@ 14@ 
+{41846} 15@, 14@ = sf_window_screen_coords_to_game_screen_coords 15@ {windowScreenCoordY} 14@
+{41860}   13@, 12@ = sf_world_coords_to_window_screen_coords 24@ {worldCoordY} 23@ {worldCoordZ} 22@
+{41877} 13@, 12@ = sf_window_screen_coords_to_game_screen_coords 13@ {windowScreenCoordY} 12@
+{41891} 11@ = get_distance_between_coords_2d 15@ {fromY} 14@ {toX} 13@ {toZ} 12@
+{41908} if 
+{41912}   is_float_lvar_greater_than_float_lvar 0@ > 11@
+{41920} goto_if_false @Noname_42025
+{41927} 13@ = 1
+{41934} if 
+{41938} cleo_call @Noname_37495 {numArgs} 1 {args} 31@ 
+{41951} goto_if_false @Noname_41965
+{41958} 13@ = 0
+
+:Noname_41965
+{41965} if 
+{41969}   13@ == 1
+{41976} goto_if_false @Noname_42025
+{41983} get_cleo_shared_var 23 {var_result} 13@
+{41990} if 
+{41994}   13@ == 6969
+{42002} goto_if_false @Noname_42025
+{42009} set_lvar_int_to_lvar_int 1@ = 30@
+{42017} set_lvar_float_to_lvar_float 0@ = 11@
+
+:Noname_42025
+{42025} 31@ += 1
+{42032}   31@ > 1000
+{42040} goto_if_false @Noname_41012
+{42047} if 
+{42051}   does_char_exist 1@
+{42056} goto_if_false @Noname_42783
+{42063} 31@, 30@, 29@ = get_active_camera_coordinates 
+{42074} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 3 25@ 24@ 23@ 
+{42098} get_cleo_shared_var 77 {var_result} 22@
+{42105} if 
+{42109}   22@ == 1
+{42116} goto_if_false @Noname_42195
+{42123} if 
+{42127} 21@ = samp_get_player_id 1@
+{42135} goto_if_false @Noname_42188
+{42142} cleo_call @Noname_30626 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42164} add_float_lvar_to_float_lvar 25@ += 19@
+{42172} add_float_lvar_to_float_lvar 24@ += 18@
+{42180} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42188
+{42188} goto @Noname_42241
+
+:Noname_42195
+{42195} cleo_call @Noname_30275 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42217} add_float_lvar_to_float_lvar 25@ += 19@
+{42225} add_float_lvar_to_float_lvar 24@ += 18@
+{42233} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42241
+{42241} get_cleo_shared_var 61 {var_result} 19@
+{42248} if or
+{42252}   19@ == 1
+{42259}   is_line_of_sight_clear 31@ {fromY} 30@ {fromZ} 29@ {toX} 25@ {toY} 24@ {toZ} 23@ {buildings} True {cars} True {chars} False {objects} True {particles} False
+{42289} goto_if_false @Noname_42315
+{42296}   is_pc_version 
+{42298} cleo_return 4 {retParams} 1@ 25@ 24@ 23@ 
+
+:Noname_42315
+{42315} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 5 25@ 24@ 23@ 
+{42339} get_cleo_shared_var 77 {var_result} 22@
+{42346} if 
+{42350}   22@ == 1
+{42357} goto_if_false @Noname_42436
+{42364} if 
+{42368} 21@ = samp_get_player_id 1@
+{42376} goto_if_false @Noname_42429
+{42383} cleo_call @Noname_30626 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42405} add_float_lvar_to_float_lvar 25@ += 19@
+{42413} add_float_lvar_to_float_lvar 24@ += 18@
+{42421} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42429
+{42429} goto @Noname_42482
+
+:Noname_42436
+{42436} cleo_call @Noname_30275 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42458} add_float_lvar_to_float_lvar 25@ += 19@
+{42466} add_float_lvar_to_float_lvar 24@ += 18@
+{42474} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42482
+{42482} if 
+{42486}   is_line_of_sight_clear 31@ {fromY} 30@ {fromZ} 29@ {toX} 25@ {toY} 24@ {toZ} 23@ {buildings} True {cars} True {chars} False {objects} True {particles} False
+{42516} goto_if_false @Noname_42542
+{42523}   is_pc_version 
+{42525} cleo_return 4 {retParams} 1@ 25@ 24@ 23@ 
+
+:Noname_42542
+{42542} cleo_call @Noname_22388 {numArgs} 2 {args} 1@ 6 25@ 24@ 23@ 
+{42566} get_cleo_shared_var 77 {var_result} 22@
+{42573} if 
+{42577}   22@ == 1
+{42584} goto_if_false @Noname_42663
+{42591} if 
+{42595} 21@ = samp_get_player_id 1@
+{42603} goto_if_false @Noname_42656
+{42610} cleo_call @Noname_30626 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42632} add_float_lvar_to_float_lvar 25@ += 19@
+{42640} add_float_lvar_to_float_lvar 24@ += 18@
+{42648} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42656
+{42656} goto @Noname_42709
+
+:Noname_42663
+{42663} cleo_call @Noname_30275 {numArgs} 1 {args} 1@ 19@ 18@ 17@ 
+{42685} add_float_lvar_to_float_lvar 25@ += 19@
+{42693} add_float_lvar_to_float_lvar 24@ += 18@
+{42701} add_float_lvar_to_float_lvar 23@ += 17@
+
+:Noname_42709
+{42709} if or
+{42713}   is_char_in_any_car 1@
+{42718}   is_line_of_sight_clear 31@ {fromY} 30@ {fromZ} 29@ {toX} 25@ {toY} 24@ {toZ} 23@ {buildings} True {cars} True {chars} False {objects} True {particles} False
+{42748} goto_if_false @Noname_42774
+{42755}   is_pc_version 
+{42757} cleo_return 4 {retParams} 1@ 25@ 24@ 23@ 
+
+:Noname_42774
+{42774}   is_australian_game 
+{42776} goto @Noname_42785
+
+:Noname_42783
+{42783}   is_australian_game 
+
+:Noname_42785
+{42785} cleo_return 4 {retParams} 1@ 2@ 3@ 4@ 
+{42802}   0@ = load_dynamic_library "kernel32.dll"
+{42821}   1@ = get_dynamic_library_procedure "GetLocalTime" {self} 0@
+{42843}   2@ = allocate_memory 32
+{42850} call_function 1@ {numArgs} 1 {pop} 0 {args} 2@ 
+{42863} 3@ = read_memory 2@ {size} 2 {vp} False
+{42875} 2@ += 2
+{42882} 4@ = read_memory 2@ {size} 2 {vp} False
+{42894} 2@ += 2
+{42901} 5@ = read_memory 2@ {size} 2 {vp} False
+{42913} 2@ += 2
+{42920} 6@ = read_memory 2@ {size} 2 {vp} False
+{42932} 2@ += 2
+{42939} 7@ = read_memory 2@ {size} 2 {vp} False
+{42951} 2@ += 2
+{42958} 8@ = read_memory 2@ {size} 2 {vp} False
+{42970} 2@ += 2
+{42977} 9@ = read_memory 2@ {size} 2 {vp} False
+{42989} 2@ += 2
+{42996} 10@ = read_memory 2@ {size} 2 {vp} False
+{43008} 2@ -= 30
+{43015} cleo_return 8 {retParams} 3@ 4@ 5@ 6@ 7@ 8@ 9@ 10@ 
